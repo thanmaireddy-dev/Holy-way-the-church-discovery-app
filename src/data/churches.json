@@ -1,0 +1,774 @@
+[
+  {
+    "id": "1",
+    "name": "St. Mary's Basilica",
+    "denomination": "Catholic",
+    "address": "Sarojini Naidu Rd, Shivaji Nagar, Secunderabad",
+    "city": "Secunderabad",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "latitude": 17.4399,
+    "longitude": 78.5006,
+    "phone": "+91 40 2780 4355",
+    "description": "One of the oldest Catholic churches in Secunderabad, featuring stunning Gothic architecture and historical significance.",
+    "googleMapsQuery": "St. Mary's Basilica Secunderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "07:00 AM",
+        "09:00 AM",
+        "11:00 AM",
+        "06:00 PM"
+      ],
+      "weekday": [
+        "06:30 AM",
+        "06:00 PM"
+      ],
+      "saturday": [
+        "06:00 PM"
+      ]
+    },
+    "events": [
+      {
+        "id": "e1",
+        "title": "Annual Feast of Mother Mary",
+        "date": "September 8",
+        "description": "Join us for the grand celebration with a solemn procession."
+      },
+      {
+        "id": "e2",
+        "title": "Youth Retreat",
+        "date": "October 15",
+        "description": "A day of prayer, music, and reflection for the youth."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Centenary Methodist English Church",
+    "denomination": "Methodist",
+    "address": "Chapel Rd, Abids",
+    "city": "Hyderabad",
+    "languages": [
+      "English"
+    ],
+    "latitude": 17.3916,
+    "longitude": 78.476,
+    "phone": "+91 40 2320 2355",
+    "description": "A historic Methodist church known for its majestic architecture and vibrant English-speaking congregation.",
+    "googleMapsQuery": "Centenary Methodist English Church Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "St. George's Church",
+    "denomination": "CSI",
+    "address": "Abids Road, Bogulkunta",
+    "city": "Hyderabad",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "latitude": 17.3923,
+    "longitude": 78.477,
+    "phone": "+91 40 2320 1234",
+    "description": "A beautiful Church of South India congregation known for its rich heritage and warm community.",
+    "googleMapsQuery": "St. George's Church Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "name": "Calvary Temple",
+    "denomination": "Pentecostal",
+    "address": "Hydernagar, Miyapur",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.4984,
+    "longitude": 78.3842,
+    "phone": "+91 40 3064 3064",
+    "description": "One of the largest Pentecostal churches in India, hosting thousands of worshippers every Sunday with impactful sermons.",
+    "googleMapsQuery": "Calvary Temple Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "name": "St. Joseph's Cathedral",
+    "denomination": "Catholic",
+    "address": "Gun Foundry, Abids",
+    "city": "Hyderabad",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "latitude": 17.3934,
+    "longitude": 78.4762,
+    "phone": "+91 40 2320 2055",
+    "description": "The cathedral of the Archdiocese of Hyderabad, known for its solemn atmosphere and stunning interiors.",
+    "googleMapsQuery": "St. Joseph's Cathedral Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "07:00 AM",
+        "09:00 AM",
+        "11:00 AM",
+        "06:00 PM"
+      ],
+      "weekday": [
+        "06:30 AM",
+        "06:00 PM"
+      ],
+      "saturday": [
+        "06:00 PM"
+      ]
+    },
+    "events": [
+      {
+        "id": "e3",
+        "title": "Christmas Midnight Mass",
+        "date": "December 24",
+        "description": "Join us for the beautiful midnight service to celebrate the birth of Christ."
+      },
+      {
+        "id": "e4",
+        "title": "Lenten Retreat",
+        "date": "March 10",
+        "description": "A time of spiritual renewal and confession during the Lenten season."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Hyderabad Baptist Church",
+    "denomination": "Baptist",
+    "address": "Narayanaguda",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.3963,
+    "longitude": 78.4908,
+    "phone": "+91 40 2322 3456",
+    "description": "A prominent Baptist church in the heart of the city, focusing on community service and spiritual growth.",
+    "googleMapsQuery": "Hyderabad Baptist Church Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "name": "St. Thomas Mar Thoma Syrian Church",
+    "denomination": "Orthodox",
+    "address": "A.S. Rao Nagar",
+    "city": "Secunderabad",
+    "languages": [
+      "Malayalam",
+      "English"
+    ],
+    "latitude": 17.4789,
+    "longitude": 78.5441,
+    "phone": "+91 40 2712 3456",
+    "description": "A traditional Mar Thoma Syrian church serving the Malayali Christian community in the twin cities.",
+    "googleMapsQuery": "St. Thomas Mar Thoma Syrian Church Secunderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "name": "Millennium Methodist Church",
+    "denomination": "Methodist",
+    "address": "S.D. Road, Secunderabad",
+    "city": "Secunderabad",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "latitude": 17.442,
+    "longitude": 78.495,
+    "phone": "+91 40 2781 1234",
+    "description": "A thriving Methodist congregation known for inspiring worship services and youth programs.",
+    "googleMapsQuery": "Millennium Methodist Church Secunderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "name": "Agape Church",
+    "denomination": "Pentecostal",
+    "address": "Kukatpally",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.4849,
+    "longitude": 78.4138,
+    "phone": "+91 40 6555 1234",
+    "description": "A spirit-filled Pentecostal church welcoming believers for dynamic worship and prayer.",
+    "googleMapsQuery": "Agape Church Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "St. John the Baptist Church",
+    "denomination": "Catholic",
+    "address": "Ramkote",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.3879,
+    "longitude": 78.4846,
+    "phone": "+91 40 2475 2345",
+    "description": "A vibrant Catholic parish with a deep commitment to faith formation and charity.",
+    "googleMapsQuery": "St. John the Baptist Church Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "07:00 AM",
+        "09:00 AM",
+        "11:00 AM",
+        "06:00 PM"
+      ],
+      "weekday": [
+        "06:30 AM",
+        "06:00 PM"
+      ],
+      "saturday": [
+        "06:00 PM"
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "name": "Wesley Church",
+    "denomination": "CSI",
+    "address": "Clock Tower, Secunderabad",
+    "city": "Secunderabad",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "latitude": 17.4411,
+    "longitude": 78.502,
+    "phone": "+91 40 2780 1234",
+    "description": "One of the most recognizable CSI churches near the historic Clock Tower, serving a diverse congregation.",
+    "googleMapsQuery": "Wesley Church Secunderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Grace Baptist Church",
+    "denomination": "Baptist",
+    "address": "Banjara Hills",
+    "city": "Hyderabad",
+    "languages": [
+      "English"
+    ],
+    "latitude": 17.4156,
+    "longitude": 78.4347,
+    "phone": "+91 40 2339 5678",
+    "description": "A welcoming Baptist community focused on biblical teaching and fellowship.",
+    "googleMapsQuery": "Grace Baptist Church Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "name": "St. Mary's Orthodox Syrian Church",
+    "denomination": "Orthodox",
+    "address": "Ramachandrapuram",
+    "city": "Hyderabad",
+    "languages": [
+      "Malayalam",
+      "English"
+    ],
+    "latitude": 17.511,
+    "longitude": 78.3039,
+    "phone": "+91 40 2302 3456",
+    "description": "An Orthodox church upholding ancient Syrian Christian traditions and liturgies.",
+    "googleMapsQuery": "St. Mary's Orthodox Syrian Church Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "name": "Bethesda Assemblies of God Church",
+    "denomination": "Pentecostal",
+    "address": "Mehdipatnam",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.3917,
+    "longitude": 78.4355,
+    "phone": "+91 40 2351 1234",
+    "description": "An AG church dedicated to Pentecostal worship and active community outreach programs.",
+    "googleMapsQuery": "Bethesda Assemblies of God Church Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "name": "St. Alphonsus Catholic Church",
+    "denomination": "Catholic",
+    "address": "Banjara Hills Road No 9",
+    "city": "Hyderabad",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "latitude": 17.4116,
+    "longitude": 78.4485,
+    "phone": "+91 40 2335 1234",
+    "description": "A peaceful Catholic church known for its beautiful architecture and quiet prayer spaces.",
+    "googleMapsQuery": "St. Alphonsus Catholic Church Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "07:00 AM",
+        "09:00 AM",
+        "11:00 AM",
+        "06:00 PM"
+      ],
+      "weekday": [
+        "06:30 AM",
+        "06:00 PM"
+      ],
+      "saturday": [
+        "06:00 PM"
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "name": "Immanuel Baptist Church",
+    "denomination": "Baptist",
+    "address": "Malkajgiri",
+    "city": "Secunderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.4526,
+    "longitude": 78.5342,
+    "phone": "+91 40 2705 4567",
+    "description": "A family-oriented Baptist church with a strong emphasis on youth and children's ministries.",
+    "googleMapsQuery": "Immanuel Baptist Church Secunderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "name": "St. Peter's CSI Church",
+    "denomination": "CSI",
+    "address": "Ramanthapur",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.3872,
+    "longitude": 78.5303,
+    "phone": "+91 40 2703 1234",
+    "description": "A dedicated CSI parish serving the local community with grace and devotion.",
+    "googleMapsQuery": "St. Peter's CSI Church Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "name": "Sharon Methodist Church",
+    "denomination": "Methodist",
+    "address": "Kompally",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.5369,
+    "longitude": 78.4862,
+    "phone": "+91 40 2716 3456",
+    "description": "A growing Methodist congregation in the northern suburbs of Hyderabad.",
+    "googleMapsQuery": "Sharon Methodist Church Hyderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "name": "Hebron Church",
+    "denomination": "Pentecostal",
+    "address": "Golconda Cross Roads",
+    "city": "Hyderabad",
+    "languages": [
+      "Telugu",
+      "English",
+      "Hindi"
+    ],
+    "latitude": 17.4082,
+    "longitude": 78.4983,
+    "phone": "+91 40 2761 1234",
+    "description": "A historically significant fellowship known for its large conventions and deep biblical roots.",
+    "googleMapsQuery": "Hebron Church Hyderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "name": "St. Anthony's Shrine",
+    "denomination": "Catholic",
+    "address": "Mettuguda",
+    "city": "Secunderabad",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "latitude": 17.4332,
+    "longitude": 78.5273,
+    "phone": "+91 40 2782 1234",
+    "description": "A popular Catholic shrine attracting devotees from all walks of life seeking St. Anthony's intercession.",
+    "googleMapsQuery": "St. Anthony's Shrine Secunderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "07:00 AM",
+        "09:00 AM",
+        "11:00 AM",
+        "06:00 PM"
+      ],
+      "weekday": [
+        "06:30 AM",
+        "06:00 PM"
+      ],
+      "saturday": [
+        "06:00 PM"
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "name": "New Life Assemblies of God",
+    "denomination": "Pentecostal",
+    "address": "Sainikpuri",
+    "city": "Secunderabad",
+    "languages": [
+      "English"
+    ],
+    "latitude": 17.4839,
+    "longitude": 78.5471,
+    "phone": "+91 40 2711 5678",
+    "description": "A dynamic English-speaking Pentecostal church with passionate worship and engaging sermons.",
+    "googleMapsQuery": "New Life Assemblies of God Secunderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "22",
+    "name": "St. Thomas SPG Tamil Church",
+    "denomination": "CSI",
+    "address": "Secunderabad",
+    "city": "Secunderabad",
+    "languages": [
+      "Tamil",
+      "English"
+    ],
+    "latitude": 17.441,
+    "longitude": 78.503,
+    "phone": "+91 40 2780 2345",
+    "description": "A historic church serving the Tamil Christian community in the region.",
+    "googleMapsQuery": "St. Thomas SPG Tamil Church Secunderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "23",
+    "name": "Ebenezer Baptist Church",
+    "denomination": "Baptist",
+    "address": "Tarnaka",
+    "city": "Secunderabad",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "latitude": 17.4294,
+    "longitude": 78.5369,
+    "phone": "+91 40 2701 1234",
+    "description": "A warm and inviting Baptist church dedicated to spreading the Gospel and fostering fellowship.",
+    "googleMapsQuery": "Ebenezer Baptist Church Secunderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "24",
+    "name": "St. Gregorios Orthodox Cathedral",
+    "denomination": "Orthodox",
+    "address": "Padmarao Nagar",
+    "city": "Secunderabad",
+    "languages": [
+      "Malayalam",
+      "English"
+    ],
+    "latitude": 17.4168,
+    "longitude": 78.5085,
+    "phone": "+91 40 2750 1234",
+    "description": "The cathedral for the Orthodox Christian community, holding fast to Eastern liturgical traditions.",
+    "googleMapsQuery": "St. Gregorios Orthodox Cathedral Secunderabad",
+    "image": "church_interior",
+    "massTimings": {
+      "sunday": [
+        "08:30 AM",
+        "10:30 AM"
+      ],
+      "weekday": [
+        "07:00 PM"
+      ],
+      "saturday": [
+        "06:30 PM"
+      ]
+    }
+  },
+  {
+    "id": "25",
+    "name": "Christ the King Catholic Church",
+    "denomination": "Catholic",
+    "address": "Sainikpuri",
+    "city": "Secunderabad",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "latitude": 17.4862,
+    "longitude": 78.548,
+    "phone": "+91 40 2711 1234",
+    "description": "A modern yet traditionally rooted parish serving the Catholic faithful in the Sainikpuri area.",
+    "googleMapsQuery": "Christ the King Catholic Church Secunderabad",
+    "image": "church_exterior",
+    "massTimings": {
+      "sunday": [
+        "07:00 AM",
+        "09:00 AM",
+        "11:00 AM",
+        "06:00 PM"
+      ],
+      "weekday": [
+        "06:30 AM",
+        "06:00 PM"
+      ],
+      "saturday": [
+        "06:00 PM"
+      ]
+    }
+  }
+]
