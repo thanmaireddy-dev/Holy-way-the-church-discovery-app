@@ -82,6 +82,9 @@ export const HomeScreen = ({ navigation }) => {
 
   const handleDenominationSelect = (denomination) => {
     setSelectedDenomination(denomination);
+    if (denomination !== 'Catholic') {
+      setSelectedChurchType('All');
+    }
   };
 
   const handleChurchTypeSelect = (churchType) => {
@@ -124,27 +127,35 @@ export const HomeScreen = ({ navigation }) => {
           </TouchableOpacity>
         ))}
       </ScrollView>
-      <ScrollView 
-        horizontal 
-        showsHorizontalScrollIndicator={false}
-        style={styles.filterContainer}
-        contentContainerStyle={styles.filterContent}
-      >
-        {CHURCH_TYPES.map(type => (
-          <TouchableOpacity 
-            key={type} 
-            style={[styles.filterChip, selectedChurchType === type && styles.filterChipSelected]}
-            onPress={() => handleChurchTypeSelect(type)}
-          >
-            <AppText 
-              variant="bodyMedium" 
-              color={selectedChurchType === type ? 'surface' : 'primary'}
+      {selectedDenomination === 'Catholic' && (
+        <ScrollView 
+          horizontal 
+          showsHorizontalScrollIndicator={false}
+          style={styles.filterContainer}
+          contentContainerStyle={styles.filterContent}
+        >
+          {CHURCH_TYPES.map(type => (
+            <TouchableOpacity 
+              key={type} 
+              style={[
+                styles.filterChip, 
+                styles.secondaryFilterChip,
+                selectedChurchType === type && styles.filterChipSelected,
+                selectedChurchType === type && styles.secondaryFilterChipSelected
+              ]}
+              onPress={() => handleChurchTypeSelect(type)}
             >
-              {type}
-            </AppText>
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
+              <AppText 
+                variant="bodyMedium" 
+                color={selectedChurchType === type ? 'surface' : 'primary'}
+                style={styles.secondaryFilterText}
+              >
+                {type}
+              </AppText>
+            </TouchableOpacity>
+          ))}
+        </ScrollView>
+      )}
     </View>
   );
 
@@ -277,6 +288,20 @@ const styles = StyleSheet.create({
   filterChipSelected: {
     backgroundColor: theme.colors.primary,
     borderColor: theme.colors.primary,
+  },
+  secondaryFilterChip: {
+    paddingHorizontal: theme.spacing.sm,
+    paddingVertical: theme.spacing.xs,
+    borderRadius: 16,
+    borderWidth: 0.5,
+    marginRight: theme.spacing.sm,
+    opacity: 0.85,
+  },
+  secondaryFilterChipSelected: {
+    opacity: 1,
+  },
+  secondaryFilterText: {
+    fontSize: 13,
   },
   emptyContainer: {
     padding: theme.spacing.xl,

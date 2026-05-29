@@ -6,6 +6,16 @@ import { AppText } from './AppText';
 import { getChurchImage } from '../utils/churchUtils';
 import { getChurchStatus } from '../utils/timeUtils';
 
+const getChurchTypeIcon = (type) => {
+  switch(type) {
+    case 'Parish': return 'account-group-outline';
+    case 'Basilica': return 'cross';
+    case 'Cathedral': return 'church';
+    case 'Shrine': return 'candle';
+    default: return 'church';
+  }
+};
+
 export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onToggleFavorite }) => {
   const status = getChurchStatus(church.massTimings);
 
@@ -44,6 +54,12 @@ export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onTo
         <View style={styles.pillContainer}>
           {church.churchType && (
             <View style={[styles.denominationPill, styles.typePill]}>
+              <MaterialCommunityIcons 
+                name={getChurchTypeIcon(church.churchType)} 
+                size={12} 
+                color={theme.colors.surface} 
+                style={{ marginRight: 4 }}
+              />
               <AppText variant="bodyMedium" color="surface" style={styles.denomination}>
                 {church.churchType}
               </AppText>
@@ -131,6 +147,8 @@ const styles = StyleSheet.create({
   },
   typePill: {
     backgroundColor: theme.colors.primary,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   denomination: {
     textTransform: 'uppercase',
