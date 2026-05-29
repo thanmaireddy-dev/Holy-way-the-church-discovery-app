@@ -21,6 +21,10 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
   }, []);
 
   const openInMaps = () => {
+    if (church.mapsUrl && church.mapsUrl.startsWith('http')) {
+      Linking.openURL(church.mapsUrl);
+      return;
+    }
     const query = church.googleMapsQuery || `${church.name} ${church.city} ${church.address}`;
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 

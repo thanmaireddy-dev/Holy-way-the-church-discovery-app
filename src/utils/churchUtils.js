@@ -16,6 +16,9 @@ export const getTimingLabel = (denomination) => {
  * This is a temporary solution until remote storage is implemented.
  */
 export const getChurchImage = (imageName) => {
+  if (typeof imageName === 'string' && imageName.startsWith('http')) {
+    return { uri: imageName };
+  }
   switch (imageName) {
     case 'basilica':
       return require('../../assets/churches/basilica.png');
