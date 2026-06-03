@@ -28,11 +28,16 @@ export const HomeScreen = ({ navigation }) => {
 
   const recommendedChurches = React.useMemo(() => {
     if (!preferences?.denomination && !preferences?.language) return [];
-    return churches.filter(c => 
+    let recs = churches.filter(c => 
       (preferences.denomination && c.denomination === preferences.denomination) ||
       (preferences.language && c.languages?.includes(preferences.language))
-    ).filter(c => !recentlyViewed?.includes(c.id)).slice(0, 5);
-  }, [churches, preferences, recentlyViewed]);
+    ).filter(c => !recentlyViewed?.includes(c.id));
+    
+    if (selectedDenomination !== 'All') {
+      recs = recs.filter(c => c.denomination === selectedDenomination);
+    }
+    return recs.slice(0, 5);
+  }, [churches, preferences, recentlyViewed, selectedDenomination]);
 
   const loadChurches = async () => {
     try {
@@ -54,7 +59,7 @@ export const HomeScreen = ({ navigation }) => {
       filtered = filtered.filter(c => c.denomination === denomination);
     }
     
-    if (churchType !== 'All') {
+    if (denomination === 'Catholic' && churchType !== 'All') {
       filtered = filtered.filter(c => c.churchType === churchType);
     }
     
@@ -92,8 +97,12 @@ export const HomeScreen = ({ navigation }) => {
   };
 
   const recentChurches = React.useMemo(() => {
-    return recentlyViewed?.map(id => churches.find(c => c.id === id)).filter(Boolean);
-  }, [recentlyViewed, churches]);
+    let recent = recentlyViewed?.map(id => churches.find(c => c.id === id)).filter(Boolean) || [];
+    if (selectedDenomination !== 'All') {
+      recent = recent.filter(c => c.denomination === selectedDenomination);
+    }
+    return recent;
+  }, [recentlyViewed, churches, selectedDenomination]);
 
   const renderHeader = () => (
     <View style={styles.header}>

@@ -1,0 +1,206 @@
+{
+  "inserted": [
+    {
+      "id": "r4wq26T7xL2Rkfnb0LN2",
+      "name": "CSI Wesley Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "FaBRR1LjlApROmxWN3Cu",
+      "name": "CSI Holy Trinity Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "TzkRuvj9uqelCXwmlyYf",
+      "name": "CSI Garrison Wesley Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "IDgDROGGhrbhYAC60F1a",
+      "name": "CSI St. George's Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "RkhykIhAdO2WpQCKKhZu",
+      "name": "CSI Immanuel Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "Z5yGYCXWeJptiCpmu3vD",
+      "name": "CSI All Saints Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "NWbv29bVjAOMwoY4gS7q",
+      "name": "CSI Centenary Wesley Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "OsGvd5vExrmYEKAm1t2j",
+      "name": "CSI St. Thomas Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "1xRCwMYKnzApTxkvZ2bd",
+      "name": "CSI St. John's Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "nI8IqnDZ64wLWCwjXrYw",
+      "name": "CSI Emmanuel Church",
+      "denomination": "CSI"
+    },
+    {
+      "id": "xCTNYMx73hvJfRelsugn",
+      "name": "Centenary Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "ZpvtXPe394B9OOxaSDSy",
+      "name": "STBC Centenary Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "HTM6kLwYQkXIyHHXcXJv",
+      "name": "Calvary Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "bdApO5mRmMD8RGXEPjds",
+      "name": "Emmanuel Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "bHGcUtYC14lXgD3SzTSz",
+      "name": "Bethel Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "S71RtAjEBjc61WCQtDtp",
+      "name": "Zion Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "cSGc48cUzVSnU2gqkrPB",
+      "name": "Grace Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "SrGZbcXMWUnQY5oRzFAP",
+      "name": "Faith Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "vsuwtle06Nv8LxOrISmG",
+      "name": "Secunderabad Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "5V2OUzRskkK6Equ93QX8",
+      "name": "Hyderabad Baptist Church",
+      "denomination": "Baptist"
+    },
+    {
+      "id": "8okK6zeL0ZaDWFf6pdDn",
+      "name": "Methodist Church in India",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "sTlxl2D3w4rv48lm0yNf",
+      "name": "Centenary Methodist English Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "sDiEqQ2Izc8oK2T4yUdF",
+      "name": "Emmanuel Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "mYRDtQuSg5AC0H3kuEgX",
+      "name": "Wesley Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "FqqAGB0UhD8XwXMyXrWJ",
+      "name": "Trinity Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "r06aYr1UElnn1jqG9twR",
+      "name": "St. Paul's Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "1OgXEQONKBOXW1SuV5Nx",
+      "name": "Grace Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "2qmVow0hKbuWmly6AlSd",
+      "name": "Christ Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "U0mmwn9b6estzC2CLhcY",
+      "name": "Zion Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "0P4SPNjqyJvo0DVvsqVL",
+      "name": "Calvary Methodist Church",
+      "denomination": "Methodist"
+    },
+    {
+      "id": "25uLOePJsTzjdEprbdua",
+      "name": "Calvary Temple",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "8cYvU7aXNAeXT7KIFc9S",
+      "name": "Hebron Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "ZFasKhXOyn9R8KoOG0i9",
+      "name": "Bethel Pentecostal Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "xOwfvnz4RzB40N1e0tK5",
+      "name": "Zion Pentecostal Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "IALsKNhQ00kJerd1XnnW",
+      "name": "Grace Pentecostal Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "OIUWpJbIU2AYlGT1dAXN",
+      "name": "Emmanuel Pentecostal Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "wLM3js2yLhdh6vAMqek9",
+      "name": "Faith Pentecostal Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "k4B6wa3VWryDHgI0mBrO",
+      "name": "New Life Assembly of God",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "uk5I1KGlhTz6CY7SyYWW",
+      "name": "Assemblies of God Church",
+      "denomination": "Pentecostal"
+    },
+    {
+      "id": "cJXy5OjQy9inJcGrBi9e",
+      "name": "Christ Gospel Church",
+      "denomination": "Pentecostal"
+    }
+  ],
+  "skippedDuplicates": [],
+  "validationFailures": []
+}
