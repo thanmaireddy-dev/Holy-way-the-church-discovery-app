@@ -1,8 +1,14 @@
 /**
  * Parse a time string like "09:00 AM" into hours and minutes.
  */
-const parseTime = (timeStr) => {
+const parseTime = (timing) => {
+  if (!timing) return null;
+  const timeStr = typeof timing === 'string' ? timing : timing.time;
+  if (!timeStr || typeof timeStr.split !== 'function') return null;
+
   const [time, modifier] = timeStr.split(' ');
+  if (!time || !modifier) return null;
+
   let [hours, minutes] = time.split(':').map(Number);
   
   if (modifier === 'PM' && hours < 12) {
@@ -37,8 +43,11 @@ export const getChurchStatus = (massTimings) => {
     todayTimings = massTimings.weekday || [];
   }
 
-  for (const timeStr of todayTimings) {
-    const { hours, minutes } = parseTime(timeStr);
+  for (const timing of todayTimings) {
+    const parsed = parseTime(timing);
+    if (!parsed) continue;
+
+    const { hours, minutes } = parsed;
     const massTotalMinutes = hours * 60 + minutes;
 
     const diff = massTotalMinutes - currentTotalMinutes;
@@ -55,4 +64,24 @@ export const getChurchStatus = (massTimings) => {
   }
 
   return { label: '🔴 No Active Service', color: '#8b0000' }; // Dark red
+};
+
+/**
+ * Format an array of timings into a readable string.
+ * Supports both legacy string arrays ["06:00 AM"] and new object arrays [{time: "06:00 AM", languages: ["English"]}].
+ */
+export const formatTimings = (timings) => {
+  if (!Array.isArray(timings)) return 'Not available';
+  return timings.map(t => {
+    if (typeof t === 'string') return t;
+    if (!t || !t.time) return '';
+    let str = t.time;
+    if (Array.isArray(t.languages) && t.languages.length > 0) {
+      str += ` (${t.languages.join(', ')})`;
+    }
+    if (t.note) {
+      str += ` ${t.note}`;
+    }
+    return str;
+  }).filter(Boolean).join('\n');
 };

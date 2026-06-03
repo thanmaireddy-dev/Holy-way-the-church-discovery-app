@@ -5,7 +5,7 @@ import { AppButton } from '../components/AppButton';
 import { theme } from '../utils/theme';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { getChurchImage, getTimingLabel } from '../utils/churchUtils';
-import { getChurchStatus } from '../utils/timeUtils';
+import { getChurchStatus, formatTimings } from '../utils/timeUtils';
 import { UserDataContext } from '../context/UserDataContext';
 import { scheduleReminder } from '../utils/notificationUtils';
 
@@ -21,11 +21,20 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
   }, []);
 
   const openInMaps = () => {
-    if (church.mapsUrl && church.mapsUrl.startsWith('http')) {
+    const isValid = (val) => val && val !== 'To be updated' && val.trim() !== '';
+
+    if (isValid(church.mapsUrl) && church.mapsUrl.startsWith('http')) {
       Linking.openURL(church.mapsUrl);
       return;
     }
-    const query = church.googleMapsQuery || `${church.name} ${church.city} ${church.address}`;
+    
+    let query;
+    if (isValid(church.googleMapsQuery)) {
+      query = church.googleMapsQuery;
+    } else {
+      query = `${church.name || ''} ${church.city || ''}`.trim();
+    }
+    
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 
     Linking.canOpenURL(url).then(supported => {
@@ -95,19 +104,19 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
             {church.massTimings?.sunday?.length > 0 && (
               <View style={styles.timingRow}>
                 <AppText variant="bodyMedium" color="text" style={styles.timingDay}>Sunday</AppText>
-                <AppText variant="body" color="textLight" style={styles.timingHours}>{church.massTimings.sunday.join(', ')}</AppText>
+                <AppText variant="body" color="textLight" style={styles.timingHours}>{formatTimings(church.massTimings.sunday)}</AppText>
               </View>
             )}
             {church.massTimings?.weekday?.length > 0 && (
               <View style={styles.timingRow}>
                 <AppText variant="bodyMedium" color="text" style={styles.timingDay}>Weekday</AppText>
-                <AppText variant="body" color="textLight" style={styles.timingHours}>{church.massTimings.weekday.join(', ')}</AppText>
+                <AppText variant="body" color="textLight" style={styles.timingHours}>{formatTimings(church.massTimings.weekday)}</AppText>
               </View>
             )}
             {church.massTimings?.saturday?.length > 0 && (
               <View style={styles.timingRow}>
                 <AppText variant="bodyMedium" color="text" style={styles.timingDay}>Saturday</AppText>
-                <AppText variant="body" color="textLight" style={styles.timingHours}>{church.massTimings.saturday.join(', ')}</AppText>
+                <AppText variant="body" color="textLight" style={styles.timingHours}>{formatTimings(church.massTimings.saturday)}</AppText>
               </View>
             )}
           </View>

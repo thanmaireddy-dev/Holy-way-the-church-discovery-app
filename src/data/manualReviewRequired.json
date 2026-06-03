@@ -1,0 +1,100 @@
+[
+  {
+    "reason": "Suspicious naming artifacts detected",
+    "rawRecord": {
+      "id": "3",
+      "parish": "Aliabad  (Feast on 2",
+      "name": "Sunday of November)",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Shrine of Our Lady of Grace"
+          },
+          {
+            "time": "10:30 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "reason": "Suspicious naming artifacts detected",
+    "rawRecord": {
+      "id": "50",
+      "parish": "Santhoshnagar",
+      "name": "Last Sunday of the Month",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Holy  Mass"
+            ]
+          },
+          {
+            "time": "10:30 AM",
+            "languages": [
+              "Malayalam"
+            ],
+            "note": "Third Sunday of the Month"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "reason": "Suspicious naming artifacts detected",
+    "rawRecord": {
+      "id": "62",
+      "parish": "Vikarabad",
+      "name": "St. Jude’s Shrine  (Everyday)",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "(Sunday)"
+          }
+        ],
+        "weekday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ],
+        "saturday": [
+          {
+            "time": "07:15 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "(Sherigudem Sub-station) (Sat.)"
+          }
+        ]
+      }
+    }
+  }
+]

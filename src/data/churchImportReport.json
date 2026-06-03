@@ -1,0 +1,123 @@
+{
+  "inserted": [
+    {
+      "id": "BR5bbsciEKAGPvs4vNS8",
+      "name": "Maria Rani Church"
+    },
+    {
+      "id": "ooyPw8YkIa7U7OFGt7Bs",
+      "name": "St. Bernard’s Church"
+    },
+    {
+      "id": "kYnDBeZxGJyisLOgQdyc",
+      "name": "Velankanni Matha Church"
+    },
+    {
+      "id": "1CwneLiybVJOXseFPcIx",
+      "name": "Don Bosco Shrine"
+    },
+    {
+      "id": "Dcwaso0LbohF5aoP1mr4",
+      "name": "St. Anthony’s Church"
+    },
+    {
+      "id": "nCZDVf9VnU5npdsE2wRE",
+      "name": "St. John Maria Vianney"
+    },
+    {
+      "id": "3oCoOBZ45JDsQ6x81e9z",
+      "name": "St. Alphonsa’s  Church"
+    },
+    {
+      "id": "XokIR61A7tydnLzfDTV3",
+      "name": "St. Francis Xavier’s Church"
+    },
+    {
+      "id": "E7nBvhH4QHQLFqSdr0nn",
+      "name": "St. Joseph’s Church"
+    },
+    {
+      "id": "hf6TP4SZ5R3EKHnTZQkX",
+      "name": "Holy Spirit Church"
+    },
+    {
+      "id": "h1XxPVyyh7Fm8y5IgAyM",
+      "name": "Our Lady of Fatima Church"
+    },
+    {
+      "id": "CRq9qbu4EpnjAaZF1PYS",
+      "name": "St. Cecilia’s Church"
+    },
+    {
+      "id": "lqAKzwijkGLs7dyAXGGY",
+      "name": "St. Stanislaus Church"
+    },
+    {
+      "id": "4zTWu00vDXDlU6jah0MD",
+      "name": "St. Patrick’s Church"
+    },
+    {
+      "id": "Zni6t7mRMsGHHFCQVnOe",
+      "name": "Immac. Heart of Mary’s Ch."
+    },
+    {
+      "id": "kd930DAlWQ1jWY0SUwZi",
+      "name": "Our Lady of Perpetual Help"
+    },
+    {
+      "id": "hnG2GEVtKs2MliPq6G8b",
+      "name": "Our Lady of Sorrows Church"
+    },
+    {
+      "id": "Sbunasn9o8bCClhz6QzT",
+      "name": "Maria Rosa Mystica Church"
+    },
+    {
+      "id": "iQE6v2aIL2XhQYh0shUu",
+      "name": "Divine Mercy Church"
+    },
+    {
+      "id": "KLIe6MPoJtRduCSU1Ho9",
+      "name": "Auxilium  Church"
+    },
+    {
+      "id": "AMDD1WZpDRywkKtR1glO",
+      "name": "St. Ann’s Church"
+    },
+    {
+      "id": "Rnt0kcnegzwrJm756ZjC",
+      "name": "St. Mother  Theresa Church"
+    },
+    {
+      "id": "WqEXyeMKFWl4t0dtzM4U",
+      "name": "Our Lady of Compassion"
+    },
+    {
+      "id": "eBlgquYnTwY6anlQaMTx",
+      "name": "St. Paul the Hermit  Church"
+    },
+    {
+      "id": "ZtvQJLWh5vQfCuyMDJN9",
+      "name": "St. Agnes’ Church"
+    },
+    {
+      "id": "YWUgwFtO6m6bFHFiEJfX",
+      "name": "St. Francis de Sales Church"
+    },
+    {
+      "id": "ALCO09FoW9EywyYoCGWi",
+      "name": "Karunagiri  Shrine"
+    }
+  ],
+  "skippedDuplicates": [
+    "St. Anthony’s Church",
+    "St. Joseph’s Church",
+    "St. Anthony’s Church",
+    "St. Anthony’s  Church"
+  ],
+  "validationFailures": [
+    "Sunday of November)",
+    "Last Sunday of the Month",
+    "St. Jude’s Shrine  (Everyday)"
+  ]
+}

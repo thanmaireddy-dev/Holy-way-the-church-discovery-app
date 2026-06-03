@@ -1,0 +1,1221 @@
+{
+  "successfullyUpdated": [
+    {
+      "churchName": "St. Joseph's Cathedral",
+      "firestoreDocId": "2",
+      "existingTimingCount": 7,
+      "newTimingCount": 6,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. John the Baptist Church",
+      "firestoreDocId": "8",
+      "existingTimingCount": 7,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Francis Xavier Church",
+      "firestoreDocId": "7",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Our Lady of Lourdes Church",
+      "firestoreDocId": "14",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Alphonsus Catholic Church",
+      "firestoreDocId": "10",
+      "existingTimingCount": 5,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Holy Trinity Church",
+      "firestoreDocId": "13",
+      "existingTimingCount": 5,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Our Lady of Lourdes Church",
+      "firestoreDocId": "14",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Our Lady of Fathima Church",
+      "firestoreDocId": "24",
+      "existingTimingCount": 4,
+      "newTimingCount": 2,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Peter's Catholic Church",
+      "firestoreDocId": "21",
+      "existingTimingCount": 4,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Infant Jesus Shrine",
+      "firestoreDocId": "12",
+      "existingTimingCount": 5,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Our Lady of Fathima Church",
+      "firestoreDocId": "24",
+      "existingTimingCount": 4,
+      "newTimingCount": 2,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Michael's Catholic Church",
+      "firestoreDocId": "23",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Shrine of Our Lady of Health",
+      "firestoreDocId": "3",
+      "existingTimingCount": 7,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Immaculate Conception Church",
+      "firestoreDocId": "16",
+      "existingTimingCount": 5,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Sacred Heart Church",
+      "firestoreDocId": "30",
+      "existingTimingCount": 7,
+      "newTimingCount": 5,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Anthony's Shrine",
+      "firestoreDocId": "4",
+      "existingTimingCount": 8,
+      "newTimingCount": 12,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Holy Cross Church",
+      "firestoreDocId": "28",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Christ the King Church",
+      "firestoreDocId": "9",
+      "existingTimingCount": 5,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Pius X Catholic Church",
+      "firestoreDocId": "17",
+      "existingTimingCount": 4,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Christ the King Church",
+      "firestoreDocId": "9",
+      "existingTimingCount": 5,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Our Lady of Lourdes Church",
+      "firestoreDocId": "14",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Mary's Basilica",
+      "firestoreDocId": "1",
+      "existingTimingCount": 7,
+      "newTimingCount": 10,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Shrine of Our Lady of Health",
+      "firestoreDocId": "3",
+      "existingTimingCount": 7,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Our Lady of Perpetual Succour",
+      "firestoreDocId": "29",
+      "existingTimingCount": 5,
+      "newTimingCount": 4,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Thomas Catholic Church",
+      "firestoreDocId": "11",
+      "existingTimingCount": 4,
+      "newTimingCount": 1,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Holy Family Church",
+      "firestoreDocId": "5",
+      "existingTimingCount": 6,
+      "newTimingCount": 11,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "Holy Cross Church",
+      "firestoreDocId": "28",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Anthony's Catholic Church",
+      "firestoreDocId": "26",
+      "existingTimingCount": 5,
+      "newTimingCount": 5,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    },
+    {
+      "churchName": "St. Francis Xavier Church",
+      "firestoreDocId": "7",
+      "existingTimingCount": 4,
+      "newTimingCount": 3,
+      "fieldsUpdated": [
+        "massTimings"
+      ]
+    }
+  ],
+  "skipped": [],
+  "unmatched": [
+    {
+      "id": "2",
+      "parish": "Adibatla",
+      "name": "Maria Rani Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "10:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Substation-Gowrenkota"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "parish": "Aliabad  (Feast on 2",
+      "name": "Sunday of November)",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Shrine of Our Lady of Grace"
+          },
+          {
+            "time": "10:30 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "parish": "Ammuguda",
+      "name": "St. Bernard’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Tamil"
+            ]
+          },
+          {
+            "time": "09:15 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "parish": "Balaji Nagar",
+      "name": "Velankanni Matha Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "English",
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "parish": "Bandlaguda Jagir (Kismatpur)",
+      "name": "Don Bosco Shrine",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:30 PM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "11:00 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Khanapur  (Sub-station)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "parish": "Bazar Ghat",
+      "name": "St. Anthony’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "12:30 PM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ],
+        "weekday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "Tuesdays"
+          }
+        ]
+      }
+    },
+    {
+      "id": "13",
+      "parish": "Bhoiguda",
+      "name": "St. John Maria Vianney",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Church"
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "11:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "14",
+      "parish": "B.H.E.L",
+      "name": "St. Alphonsa’s  Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:15 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:15 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "17",
+      "parish": "Borabanda",
+      "name": "St. Francis Xavier’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "19",
+      "parish": "Cherlapally",
+      "name": "St. Joseph’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "parish": "Church Colony",
+      "name": "Holy Spirit Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "11:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "21",
+      "parish": "Dammaiguda",
+      "name": "Our Lady of Fatima Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "05:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "22",
+      "parish": "Dayanandnagar",
+      "name": "St. Cecilia’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "10:15 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "24",
+      "parish": "Gaddiannaram",
+      "name": "St. Stanislaus Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:15 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "09:15 AM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "25",
+      "parish": "Gandhinagar",
+      "name": "St. Anthony’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "Tamil"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "26",
+      "parish": "Garrison",
+      "name": "St. Patrick’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [],
+            "note": "(First Sunday - Mass will  be in Tamil at"
+          }
+        ]
+      }
+    },
+    {
+      "id": "27",
+      "parish": "Ghatkesar",
+      "name": "Immac. Heart of Mary’s Ch.",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "10:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Venkatadri Township"
+          }
+        ]
+      }
+    },
+    {
+      "id": "30",
+      "parish": "Jagadgirigutta",
+      "name": "Our Lady of Perpetual Help",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "31",
+      "parish": "Jahanuma",
+      "name": "Our Lady of Sorrows Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "10:00 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "C.R.P.F"
+          }
+        ]
+      }
+    },
+    {
+      "id": "35",
+      "parish": "L.B.Nagar",
+      "name": "Maria Rosa Mystica Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "& Holy Mass)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "36",
+      "parish": "Madinaguda",
+      "name": "Divine Mercy Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "37",
+      "parish": "Mahendra Hills",
+      "name": "Auxilium  Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "05:30 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "38",
+      "parish": "Mallapur",
+      "name": "St. Ann’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "10:00 AM",
+            "languages": [
+              "English",
+              "Hindi"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "39",
+      "parish": "Manikonda Mission",
+      "name": "St. Mother  Theresa Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "40",
+      "parish": "Medipally",
+      "name": "Our Lady of Compassion",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "42",
+      "parish": "Moulali",
+      "name": "St. Joseph’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "43",
+      "parish": "Mudfort",
+      "name": "St. Anthony’s Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "Tamil"
+            ]
+          },
+          {
+            "time": "07:45 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "11:00 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "Karkana - St. Anthony’s  Chapel"
+          }
+        ],
+        "weekday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "(First Friday of the Month)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "45",
+      "parish": "Nandrakal",
+      "name": "St. Paul the Hermit  Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Hasthinapur  (Substation) (Sunday)"
+          }
+        ],
+        "weekday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Everyday (Mon-Sun)"
+          }
+        ],
+        "saturday": [
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "Saturday"
+          }
+        ]
+      }
+    },
+    {
+      "id": "50",
+      "parish": "Santhoshnagar",
+      "name": "Last Sunday of the Month",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Holy  Mass"
+            ]
+          },
+          {
+            "time": "10:30 AM",
+            "languages": [
+              "Malayalam"
+            ],
+            "note": "Third Sunday of the Month"
+          }
+        ]
+      }
+    },
+    {
+      "id": "51",
+      "parish": "Sappers Lines",
+      "name": "St. Anthony’s  Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "08:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:30 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ],
+        "weekday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "Tuesday"
+          }
+        ]
+      }
+    },
+    {
+      "id": "53",
+      "parish": "Shapurnagar",
+      "name": "St. Agnes’ Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:45 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "10:00 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "(Subash Nagar)"
+          },
+          {
+            "time": "06:30 PM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "55",
+      "parish": "Shantinagar",
+      "name": "St. Francis de Sales Church",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:45 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "11:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "58",
+      "parish": "Suraram",
+      "name": "Karunagiri  Shrine",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "(Children’s  Mass)"
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "62",
+      "parish": "Vikarabad",
+      "name": "St. Jude’s Shrine  (Everyday)",
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "(Sunday)"
+          }
+        ],
+        "weekday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "Telugu"
+            ]
+          }
+        ],
+        "saturday": [
+          {
+            "time": "07:15 AM",
+            "languages": [
+              "Telugu"
+            ],
+            "note": "(Sherigudem Sub-station) (Sat.)"
+          }
+        ]
+      }
+    }
+  ],
+  "failures": []
+}

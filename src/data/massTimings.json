@@ -1,0 +1,1614 @@
+[
+  {
+    "id": "2",
+    "name": "St. Joseph's Cathedral",
+    "churchType": "Cathedral",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Gun Foundry, Abids",
+    "city": "Hyderabad",
+    "description": "The mother church of the Archdiocese of Hyderabad, renowned for its majestic facade, historic bells, and solemn liturgies.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "08:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s  Mass)"
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "11:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "March 19",
+    "patron": "St. Joseph",
+    "parishPriest": "Rev. Fr. M.A. Raju",
+    "phone": "+91 40 2320 2055",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Joseph's Cathedral Hyderabad",
+    "latitude": 17.3934,
+    "longitude": 78.4762,
+    "image": "cathedral"
+  },
+  {
+    "id": "8",
+    "name": "St. John the Baptist Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Ramkote",
+    "city": "Hyderabad",
+    "description": "A very active parish located in the heart of Hyderabad, focusing deeply on charitable works and faith formation.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:15 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "June 24",
+    "patron": "St. John the Baptist",
+    "parishPriest": "Rev. Fr. K. Anthony",
+    "phone": "+91 40 2475 2345",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. John the Baptist Church Ramkote",
+    "latitude": 17.3879,
+    "longitude": 78.4846,
+    "image": "parish"
+  },
+  {
+    "id": "7",
+    "name": "St. Francis Xavier Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Yapral",
+    "city": "Secunderabad",
+    "description": "A growing, vibrant parish on the outskirts of the city known for its modern architecture and active youth.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "08:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ],
+          "note": "Tulasi Gardens"
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "December 3",
+    "patron": "St. Francis Xavier",
+    "parishPriest": "Rev. Fr. Showry",
+    "phone": "+91 40 2786 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Francis Xavier Church Yapral",
+    "latitude": 17.4925,
+    "longitude": 78.5415,
+    "image": "parish"
+  },
+  {
+    "id": "14",
+    "name": "Our Lady of Lourdes Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sanathnagar",
+    "city": "Hyderabad",
+    "description": "A peaceful parish church inspired by the Lourdes grotto, fostering a strong Marian devotion.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:45 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:45 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:15 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "February 11",
+    "patron": "Our Lady of Lourdes",
+    "parishPriest": "Rev. Fr. Vincent",
+    "phone": "+91 40 2381 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Our Lady of Lourdes Church Sanathnagar",
+    "latitude": 17.4589,
+    "longitude": 78.4412,
+    "image": "parish"
+  },
+  {
+    "id": "10",
+    "name": "St. Alphonsus Catholic Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Banjara Hills",
+    "city": "Hyderabad",
+    "description": "A peaceful oasis in the bustling Banjara Hills, noted for its solemn liturgy and beautiful grotto.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "August 1",
+    "patron": "St. Alphonsus Liguori",
+    "parishPriest": "Rev. Fr. Amal Raj",
+    "phone": "+91 40 2335 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Alphonsus Catholic Church Banjara Hills",
+    "latitude": 17.4116,
+    "longitude": 78.4485,
+    "image": "parish"
+  },
+  {
+    "id": "13",
+    "name": "Holy Trinity Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Begumpet",
+    "city": "Secunderabad",
+    "description": "A historic church with colonial-era architecture, serving the bustling Begumpet area.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "Trinity Sunday",
+    "patron": "Holy Trinity",
+    "parishPriest": "Rev. Fr. Joseph",
+    "phone": "+91 40 2776 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Holy Trinity Church Begumpet",
+    "latitude": 17.4418,
+    "longitude": 78.4619,
+    "image": "parish"
+  },
+  {
+    "id": "14",
+    "name": "Our Lady of Lourdes Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sanathnagar",
+    "city": "Hyderabad",
+    "description": "A peaceful parish church inspired by the Lourdes grotto, fostering a strong Marian devotion.",
+    "languages": [
+      "Telugu",
+      "English",
+      "Hindi"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:45 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:45 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:15 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "February 11",
+    "patron": "Our Lady of Lourdes",
+    "parishPriest": "Rev. Fr. Vincent",
+    "phone": "+91 40 2381 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Our Lady of Lourdes Church Sanathnagar",
+    "latitude": 17.4589,
+    "longitude": 78.4412,
+    "image": "parish"
+  },
+  {
+    "id": "24",
+    "name": "Our Lady of Fathima Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Bolarum",
+    "city": "Secunderabad",
+    "description": "A picturesque church serving the Bolarum cantonment with a beautiful statue of Our Lady of Fathima.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "05:00 AM",
+          "languages": [
+            "Telugu"
+          ],
+          "note": "(Bandlaguda Sub-station)"
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "May 13",
+    "patron": "Our Lady of Fathima",
+    "parishPriest": "Rev. Fr. M. John",
+    "phone": "+91 40 2786 5678",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Our Lady of Fathima Church Bolarum",
+    "latitude": 17.5122,
+    "longitude": 78.5111,
+    "image": "parish"
+  },
+  {
+    "id": "21",
+    "name": "St. Peter's Catholic Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Bowenpally",
+    "city": "Secunderabad",
+    "description": "A vibrant parish fostering strong community bonds among the residents of Bowenpally.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "09:45 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s  Mass)"
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "June 29",
+    "patron": "St. Peter the Apostle",
+    "parishPriest": "Rev. Fr. Thomas",
+    "phone": "+91 40 2775 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Peter's Church Bowenpally",
+    "latitude": 17.4811,
+    "longitude": 78.4722,
+    "image": "parish"
+  },
+  {
+    "id": "12",
+    "name": "Infant Jesus Shrine",
+    "churchType": "Shrine",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Emjala",
+    "city": "Hyderabad",
+    "description": "A rapidly growing shrine dedicated to the Infant Jesus of Prague, known for miraculous healings.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "10:00 AM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "Second Sunday of January",
+    "patron": "Infant Jesus",
+    "parishPriest": "Rev. Fr. Bala Showry",
+    "phone": "+91 40 2000 1234",
+    "website": "infantjesusshrine.org",
+    "googleMapsQuery": "Infant Jesus Shrine Emjala",
+    "latitude": 17.3345,
+    "longitude": 78.6012,
+    "image": "shrine"
+  },
+  {
+    "id": "24",
+    "name": "Our Lady of Fathima Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Bolarum",
+    "city": "Secunderabad",
+    "description": "A picturesque church serving the Bolarum cantonment with a beautiful statue of Our Lady of Fathima.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "05:00 AM",
+          "languages": [
+            "Telugu"
+          ],
+          "note": "(Bandlaguda Sub-station)"
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "May 13",
+    "patron": "Our Lady of Fathima",
+    "parishPriest": "Rev. Fr. M. John",
+    "phone": "+91 40 2786 5678",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Our Lady of Fathima Church Bolarum",
+    "latitude": 17.5122,
+    "longitude": 78.5111,
+    "image": "parish"
+  },
+  {
+    "id": "23",
+    "name": "St. Michael's Catholic Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Golconda",
+    "city": "Hyderabad",
+    "description": "An ancient parish situated near the historic Golconda Fort, possessing deep historical roots.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "September 29",
+    "patron": "St. Michael the Archangel",
+    "parishPriest": "Rev. Fr. V. Kumar",
+    "phone": "+91 40 2351 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Michael's Church Golconda",
+    "latitude": 17.3822,
+    "longitude": 78.4011,
+    "image": "parish"
+  },
+  {
+    "id": "3",
+    "name": "Shrine of Our Lady of Health",
+    "churchType": "Shrine",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "AC Guards, Khairatabad",
+    "city": "Hyderabad",
+    "description": "A very popular and historically significant shrine attracting thousands of devotees across faiths.",
+    "languages": [
+      "Telugu",
+      "English",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "of Vailankanni"
+        }
+      ],
+      "weekday": [],
+      "saturday": [
+        {
+          "time": "06:00 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "First Saturday"
+        },
+        {
+          "time": "10:00 AM",
+          "languages": [
+            "to  04.00 p.m.  Praise"
+          ],
+          "note": "(On  First  Saturday"
+        }
+      ]
+    },
+    "feastDay": "September 8",
+    "patron": "Our Lady of Health",
+    "parishPriest": "Rev. Fr. Y. Joji Reddy",
+    "phone": "+91 40 2331 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Shrine of Our Lady of Health Khairatabad",
+    "latitude": 17.4082,
+    "longitude": 78.4611,
+    "image": "shrine"
+  },
+  {
+    "id": "16",
+    "name": "Immaculate Conception Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sapphire Cross, Secunderabad",
+    "city": "Secunderabad",
+    "description": "A historic and spiritually vibrant church noted for its classic Marian devotion and choir.",
+    "languages": [
+      "English",
+      "Tamil",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "08:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:00 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s Mass)"
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "December 8",
+    "patron": "Immaculate Conception",
+    "parishPriest": "Rev. Fr. Bosco",
+    "phone": "+91 40 2781 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Immaculate Conception Church Secunderabad",
+    "latitude": 17.4367,
+    "longitude": 78.5022,
+    "image": "parish"
+  },
+  {
+    "id": "6",
+    "name": "Sacred Heart Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "South Lallaguda",
+    "city": "Secunderabad",
+    "description": "Historically known as the Railway Church, it stands as a magnificent heritage structure serving the local railway community.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "08:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "10:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "09:45 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s  Mass)"
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "Feast of the Sacred Heart",
+    "patron": "Sacred Heart of Jesus",
+    "parishPriest": "Rev. Fr. Dominic",
+    "phone": "+91 40 2700 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Sacred Heart Church Lallaguda",
+    "latitude": 17.4262,
+    "longitude": 78.5262,
+    "image": "parish"
+  },
+  {
+    "id": "4",
+    "name": "St. Anthony's Shrine",
+    "churchType": "Shrine",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Mettuguda",
+    "city": "Secunderabad",
+    "description": "A renowned shrine known for its powerful intercessory prayers to St. Anthony of Padua and Tuesday novenas.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "08:15 AM",
+          "languages": [
+            "Tamil"
+          ]
+        },
+        {
+          "time": "09:30 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "Children’s  Mass"
+        },
+        {
+          "time": "10:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "11:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "10:00 AM",
+          "languages": []
+        },
+        {
+          "time": "11:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "Tamil"
+          ]
+        },
+        {
+          "time": "07:00 PM",
+          "languages": []
+        }
+      ],
+      "weekday": [
+        {
+          "time": "06:00 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "Tuesday"
+        }
+      ],
+      "saturday": []
+    },
+    "feastDay": "June 13",
+    "patron": "St. Anthony of Padua",
+    "parishPriest": "Rev. Fr. Thomas D'Souza",
+    "phone": "+91 40 2782 1234",
+    "website": "stanthonysshrine.in",
+    "googleMapsQuery": "St. Anthony's Shrine Mettuguda",
+    "latitude": 17.4332,
+    "longitude": 78.5273,
+    "image": "shrine"
+  },
+  {
+    "id": "28",
+    "name": "Holy Cross Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Nacharam",
+    "city": "Hyderabad",
+    "description": "A vibrant parish actively participating in ecumenical activities and youth empowerment.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "05:30 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "September 14",
+    "patron": "The Holy Cross",
+    "parishPriest": "Rev. Fr. M. Raju",
+    "phone": "+91 40 2715 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Holy Cross Church Nacharam",
+    "latitude": 17.4255,
+    "longitude": 78.5677,
+    "image": "parish"
+  },
+  {
+    "id": "9",
+    "name": "Christ the King Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sainikpuri",
+    "city": "Secunderabad",
+    "description": "A beautifully constructed modern parish serving the faithful in the defense colonies.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "05:30 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "Feast of Christ the King",
+    "patron": "Christ the King",
+    "parishPriest": "Rev. Fr. Raju",
+    "phone": "+91 40 2711 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Christ the King Church Sainikpuri",
+    "latitude": 17.4862,
+    "longitude": 78.548,
+    "image": "parish"
+  },
+  {
+    "id": "17",
+    "name": "St. Pius X Catholic Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Ramnagar",
+    "city": "Hyderabad",
+    "description": "A community-focused church deeply engaged in local charity and education initiatives.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:45 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s  Mass)"
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "August 21",
+    "patron": "Pope St. Pius X",
+    "parishPriest": "Rev. Fr. Lourduswamy",
+    "phone": "+91 40 2761 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Pius X Church Ramnagar",
+    "latitude": 17.4111,
+    "longitude": 78.5076,
+    "image": "parish"
+  },
+  {
+    "id": "9",
+    "name": "Christ the King Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sainikpuri",
+    "city": "Secunderabad",
+    "description": "A beautifully constructed modern parish serving the faithful in the defense colonies.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "05:30 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "Feast of Christ the King",
+    "patron": "Christ the King",
+    "parishPriest": "Rev. Fr. Raju",
+    "phone": "+91 40 2711 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Christ the King Church Sainikpuri",
+    "latitude": 17.4862,
+    "longitude": 78.548,
+    "image": "parish"
+  },
+  {
+    "id": "14",
+    "name": "Our Lady of Lourdes Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sanathnagar",
+    "city": "Hyderabad",
+    "description": "A peaceful parish church inspired by the Lourdes grotto, fostering a strong Marian devotion.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:45 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:45 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:15 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "February 11",
+    "patron": "Our Lady of Lourdes",
+    "parishPriest": "Rev. Fr. Vincent",
+    "phone": "+91 40 2381 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Our Lady of Lourdes Church Sanathnagar",
+    "latitude": 17.4589,
+    "longitude": 78.4412,
+    "image": "parish"
+  },
+  {
+    "id": "1",
+    "name": "St. Mary's Basilica",
+    "churchType": "Basilica",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sarojini Naidu Rd, Shivaji Nagar",
+    "city": "Secunderabad",
+    "description": "One of the oldest Catholic churches in Secunderabad, featuring stunning Gothic architecture and historical significance as a minor basilica.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:00 AM",
+          "languages": [
+            "Tamil"
+          ]
+        },
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "08:15 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s Mass)"
+        },
+        {
+          "time": "11:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "05:00 PM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [
+        {
+          "time": "12:00 PM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Every Friday)"
+        }
+      ],
+      "saturday": [
+        {
+          "time": "12:00 PM",
+          "languages": [
+            "English"
+          ],
+          "note": "Saturday)"
+        }
+      ]
+    },
+    "feastDay": "September 8",
+    "patron": "Mother Mary",
+    "parishPriest": "Rev. Fr. Swarna Bernard",
+    "phone": "+91 40 2780 4355",
+    "website": "stmarysbasilica.in",
+    "googleMapsQuery": "St. Mary's Basilica Secunderabad",
+    "latitude": 17.4399,
+    "longitude": 78.5006,
+    "image": "basilica"
+  },
+  {
+    "id": "3",
+    "name": "Shrine of Our Lady of Health",
+    "churchType": "Shrine",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "AC Guards, Khairatabad",
+    "city": "Hyderabad",
+    "description": "A very popular and historically significant shrine attracting thousands of devotees across faiths.",
+    "languages": [
+      "Telugu",
+      "English",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "of Vailankanni"
+        }
+      ],
+      "weekday": [],
+      "saturday": [
+        {
+          "time": "06:00 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "First Saturday"
+        },
+        {
+          "time": "10:00 AM",
+          "languages": [
+            "to  04.00 p.m.  Praise"
+          ],
+          "note": "(On  First  Saturday"
+        }
+      ]
+    },
+    "feastDay": "September 8",
+    "patron": "Our Lady of Health",
+    "parishPriest": "Rev. Fr. Y. Joji Reddy",
+    "phone": "+91 40 2331 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Shrine of Our Lady of Health Khairatabad",
+    "latitude": 17.4082,
+    "longitude": 78.4611,
+    "image": "shrine"
+  },
+  {
+    "id": "29",
+    "name": "Our Lady of Perpetual Succour",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Bowenpally",
+    "city": "Secunderabad",
+    "description": "A devoted community focusing on the novena to Our Lady of Perpetual Succour every Wednesday.",
+    "languages": [
+      "Telugu",
+      "English",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "08:15 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "Help Church"
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ],
+          "note": "(Children’s  Mass)"
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "June 27",
+    "patron": "Our Lady of Perpetual Succour",
+    "parishPriest": "Rev. Fr. George",
+    "phone": "+91 40 2775 5678",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Our Lady of Perpetual Succour Bowenpally",
+    "latitude": 17.4788,
+    "longitude": 78.4711,
+    "image": "parish"
+  },
+  {
+    "id": "11",
+    "name": "St. Thomas Catholic Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Sultan Bazar",
+    "city": "Hyderabad",
+    "description": "A prominent central parish known for its beautiful services and tight-knit community.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "08:15 AM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "July 3",
+    "patron": "St. Thomas the Apostle",
+    "parishPriest": "Rev. Fr. Peter",
+    "phone": "+91 40 2473 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Thomas Catholic Church Sultan Bazar",
+    "latitude": 17.3855,
+    "longitude": 78.4812,
+    "image": "parish"
+  },
+  {
+    "id": "5",
+    "name": "Holy Family Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Trimulgherry",
+    "city": "Secunderabad",
+    "description": "A beautiful and large parish serving the military and local civilian communities in the cantonment area.",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:15 AM",
+          "languages": [
+            "Tamil"
+          ]
+        },
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "10:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "11:15 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "11:00 AM",
+          "languages": [
+            "Telugu"
+          ],
+          "note": "Second Sunday"
+        },
+        {
+          "time": "08:00 AM",
+          "languages": [
+            "Telugu"
+          ],
+          "note": "First Sunday (Gunrock)"
+        }
+      ],
+      "weekday": [
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ],
+          "note": "Fridays Mass & Adoration"
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "Tamil"
+          ],
+          "note": "Every Thursday"
+        }
+      ],
+      "saturday": [
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ],
+          "note": "Saturdays Mass & Rosary"
+        }
+      ]
+    },
+    "feastDay": "First Sunday after Christmas",
+    "patron": "Holy Family",
+    "parishPriest": "Rev. Fr. B. Anthony",
+    "phone": "+91 40 2779 1234",
+    "website": "holyfamilychurch.org",
+    "googleMapsQuery": "Holy Family Church Trimulgherry",
+    "latitude": 17.4855,
+    "longitude": 78.5088,
+    "image": "parish"
+  },
+  {
+    "id": "28",
+    "name": "Holy Cross Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Nacharam",
+    "city": "Hyderabad",
+    "description": "A vibrant parish actively participating in ecumenical activities and youth empowerment.",
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:15 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "05:30 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "September 14",
+    "patron": "The Holy Cross",
+    "parishPriest": "Rev. Fr. M. Raju",
+    "phone": "+91 40 2715 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "Holy Cross Church Nacharam",
+    "latitude": 17.4255,
+    "longitude": 78.5677,
+    "image": "parish"
+  },
+  {
+    "id": "26",
+    "name": "St. Anthony's Catholic Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Venkatapuram",
+    "city": "Secunderabad",
+    "description": "A highly active local parish dedicated to St. Anthony, serving a large congregation in Alwal/Venkatapuram.",
+    "languages": [
+      "Telugu",
+      "English",
+      "Tamil"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "06:00 AM",
+          "languages": [
+            "Tamil"
+          ]
+        },
+        {
+          "time": "07:30 AM",
+          "languages": [
+            "Telugu"
+          ]
+        },
+        {
+          "time": "09:00 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "weekday": [
+        {
+          "time": "06:30 PM",
+          "languages": [
+            "Tamil"
+          ],
+          "note": "Tuesday’s"
+        }
+      ],
+      "saturday": []
+    },
+    "feastDay": "June 13",
+    "patron": "St. Anthony of Padua",
+    "parishPriest": "Rev. Fr. Y. Arogyam",
+    "phone": "+91 40 2779 5678",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Anthony's Church Venkatapuram",
+    "latitude": 17.4955,
+    "longitude": 78.5022,
+    "image": "parish"
+  },
+  {
+    "id": "7",
+    "name": "St. Francis Xavier Church",
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "archdiocese": "Archdiocese of Hyderabad",
+    "address": "Yapral",
+    "city": "Secunderabad",
+    "description": "A growing, vibrant parish on the outskirts of the city known for its modern architecture and active youth.",
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "massTimings": {
+      "sunday": [
+        {
+          "time": "08:30 AM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "06:00 PM",
+          "languages": [
+            "English"
+          ]
+        },
+        {
+          "time": "07:00 AM",
+          "languages": [
+            "Telugu"
+          ],
+          "note": "Tulasi Gardens"
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "feastDay": "December 3",
+    "patron": "St. Francis Xavier",
+    "parishPriest": "Rev. Fr. Showry",
+    "phone": "+91 40 2786 1234",
+    "website": "archdioceseofhyderabad.org",
+    "googleMapsQuery": "St. Francis Xavier Church Yapral",
+    "latitude": 17.4925,
+    "longitude": 78.5415,
+    "image": "parish"
+  }
+]

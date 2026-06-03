@@ -1,0 +1,177 @@
+[
+  {
+    "churchName": "St. Mary's Basilica",
+    "firestoreDocId": "1",
+    "existingTimingCount": 7,
+    "newTimingCount": 9,
+    "fieldsToUpdate": [
+      "massTimings"
+    ],
+    "payloadPreview": {
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:00 AM",
+            "languages": [
+              "Tamil"
+            ]
+          },
+          {
+            "time": "07:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:15 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "09:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "09:15 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "(Children’s Mass)"
+          },
+          {
+            "time": "11:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "05:00 PM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "12:00 PM",
+            "languages": [
+              "English"
+            ],
+            "note": "(Every Friday)"
+          }
+        ],
+        "weekday": [],
+        "saturday": []
+      }
+    }
+  },
+  {
+    "churchName": "St. Joseph's Cathedral",
+    "firestoreDocId": "2",
+    "existingTimingCount": 7,
+    "newTimingCount": 6,
+    "fieldsToUpdate": [
+      "massTimings"
+    ],
+    "payloadPreview": {
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "09:00 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "(Children’s  Mass)"
+          },
+          {
+            "time": "09:15 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "11:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ],
+        "weekday": [],
+        "saturday": []
+      }
+    }
+  },
+  {
+    "churchName": "Sacred Heart Church",
+    "firestoreDocId": "30",
+    "existingTimingCount": 7,
+    "newTimingCount": 5,
+    "fieldsToUpdate": [
+      "massTimings"
+    ],
+    "payloadPreview": {
+      "massTimings": {
+        "sunday": [
+          {
+            "time": "06:30 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "08:00 AM",
+            "languages": [
+              "Telugu"
+            ]
+          },
+          {
+            "time": "10:00 AM",
+            "languages": [
+              "English"
+            ]
+          },
+          {
+            "time": "09:45 AM",
+            "languages": [
+              "English"
+            ],
+            "note": "(Children’s  Mass)"
+          },
+          {
+            "time": "06:00 PM",
+            "languages": [
+              "English"
+            ]
+          }
+        ],
+        "weekday": [],
+        "saturday": []
+      }
+    }
+  }
+]
