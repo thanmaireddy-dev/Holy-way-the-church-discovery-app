@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { View, StyleSheet, SafeAreaView, ScrollView, Linking, Platform, Image, TouchableOpacity, Alert } from 'react-native';
+import { View, StyleSheet, SafeAreaView, ScrollView, Linking, Platform, Image, TouchableOpacity, Alert, Share } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppButton } from '../components/AppButton';
 import { SkeletonImage } from '../components/SkeletonImage';
@@ -10,6 +10,7 @@ import { getChurchImage, getTimingLabel } from '../utils/churchUtils';
 import { getChurchStatus, formatTimings } from '../utils/timeUtils';
 import { UserDataContext } from '../context/UserDataContext';
 import { scheduleReminder } from '../utils/notificationUtils';
+import * as Clipboard from 'expo-clipboard';
 
 export const ChurchDetailsScreen = ({ route, navigation }) => {
   const { church } = route.params;
@@ -54,10 +55,37 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
   const handleRemindMe = async (title, body) => {
     const success = await scheduleReminder(title, body);
     if (success) {
-      // Small alert for demo purposes
       Alert.alert("Reminder Set", `You will be reminded about ${title}.`);
     } else {
       Alert.alert("Permission Required", "Please enable notifications to set reminders.");
+    }
+  };
+
+  const getShareUrl = () => `https://holyway.app/church/${church.id}`;
+
+  const getShareMessage = () => {
+    const type = church.churchType ? church.churchType : 'Church';
+    return `I discovered ${church.name} on HolyWay and thought you might find it meaningful.\n\n📍 ${church.city}\n⛪ ${church.denomination} ${type}\n\nExplore it on HolyWay.\n${getShareUrl()}`;
+  };
+
+  const handleShare = async () => {
+    try {
+      await Share.share({
+        message: getShareMessage(),
+        title: `Share ${church.name}`,
+        url: getShareUrl(),
+      });
+    } catch (error) {
+      console.error("Error sharing church:", error.message);
+    }
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await Clipboard.setStringAsync(getShareUrl());
+      Alert.alert("Link Copied", "Church link copied successfully.");
+    } catch (error) {
+      console.error("Error copying link:", error);
     }
   };
 
@@ -202,11 +230,19 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
             </View>
           )}
 
-          <AppButton 
-            title="Open in Maps" 
-            onPress={openInMaps}
-            style={styles.mapButton}
-          />
+          <View style={styles.actionButtonsRow}>
+            <AppButton 
+              title="Open in Maps" 
+              onPress={openInMaps}
+              style={[styles.mapButton, { flex: 1, marginRight: theme.spacing.md }]}
+            />
+            <TouchableOpacity style={styles.secondaryActionButton} onPress={handleShare}>
+              <MaterialCommunityIcons name="share-variant-outline" size={24} color={theme.colors.primary} />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.secondaryActionButton} onPress={handleCopyLink}>
+              <MaterialCommunityIcons name="link-variant" size={24} color={theme.colors.primary} />
+            </TouchableOpacity>
+          </View>
 
           {church.events && church.events.length > 0 && (
             <>
@@ -358,8 +394,24 @@ const styles = StyleSheet.create({
   infoTextContainer: {
     flex: 1,
   },
-  mapButton: {
+  actionButtonsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
     marginTop: theme.spacing.md,
+  },
+  mapButton: {
+    marginTop: 0, // Removed marginTop as it's now handled by the row
+  },
+  secondaryActionButton: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: 'rgba(210, 180, 140, 0.15)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: theme.spacing.sm,
+    borderWidth: 1,
+    borderColor: 'rgba(210, 180, 140, 0.3)',
   },
   eventCard: {
     backgroundColor: theme.colors.background,
