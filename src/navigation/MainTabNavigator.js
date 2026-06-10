@@ -5,7 +5,7 @@ import { theme } from '../utils/theme';
 
 import { HomeScreen } from '../screens/HomeScreen';
 import { LanguagesScreen } from '../screens/LanguagesScreen';
-import { NearMeScreen } from '../screens/NearMeScreen';
+import { FindMyChurchScreen } from '../screens/FindMyChurchScreen';
 import { FavoritesScreen } from '../screens/FavoritesScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
 
@@ -23,8 +23,8 @@ export const MainTabNavigator = () => {
             iconName = focused ? 'home-variant' : 'home-variant-outline';
           } else if (route.name === 'LanguagesTab') {
             iconName = 'translate';
-          } else if (route.name === 'NearMeTab') {
-            iconName = focused ? 'map-marker-radius' : 'map-marker-radius-outline';
+          } else if (route.name === 'FindMyChurchTab') {
+            iconName = focused ? 'church' : 'church';
           } else if (route.name === 'FavoritesTab') {
             iconName = focused ? 'heart' : 'heart-outline';
           } else if (route.name === 'ProfileTab') {
@@ -62,9 +62,9 @@ export const MainTabNavigator = () => {
         options={{ title: 'Languages' }} 
       />
       <Tab.Screen 
-        name="NearMeTab" 
-        component={NearMeScreen} 
-        options={{ title: 'Near Me' }} 
+        name="FindMyChurchTab" 
+        component={FindMyChurchScreen} 
+        options={{ title: 'Find My Church' }} 
       />
       <Tab.Screen 
         name="FavoritesTab" 

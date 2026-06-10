@@ -1,7 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { View, StyleSheet, SafeAreaView, ScrollView, Linking, Platform, Image, TouchableOpacity, Alert } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppButton } from '../components/AppButton';
+import { SkeletonImage } from '../components/SkeletonImage';
+import { LoadingState } from '../components/LoadingState';
 import { theme } from '../utils/theme';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { getChurchImage, getTimingLabel } from '../utils/churchUtils';
@@ -13,11 +15,14 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
   const { church } = route.params;
   const { favorites, toggleFavorite, addRecentlyViewed } = useContext(UserDataContext);
   
+  const [loading, setLoading] = useState(true);
   const isFavorite = favorites?.includes(church.id);
   const status = getChurchStatus(church.massTimings);
 
   useEffect(() => {
     addRecentlyViewed(church.id);
+    const timer = setTimeout(() => setLoading(false), 400); // Smooth transition period
+    return () => clearTimeout(timer);
   }, []);
 
   const openInMaps = () => {
@@ -56,12 +61,20 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
     }
   };
 
+  if (loading) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <LoadingState message="Loading church details..." />
+      </SafeAreaView>
+    );
+  }
+
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
         
         <View style={styles.imageContainer}>
-          <Image source={getChurchImage(church.image)} style={styles.image} resizeMode="cover" />
+          <SkeletonImage source={getChurchImage(church.image)} style={styles.image} resizeMode="cover" />
           <View style={[styles.statusBadge, { backgroundColor: status.color }]}>
             <AppText variant="bodyMedium" style={styles.statusText}>{status.label}</AppText>
           </View>
@@ -149,7 +162,7 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
             </View>
           </View>
 
-          {church.parishPriest && (
+          {church.denomination === 'Catholic' && church.parishPriest && (
             <View style={styles.infoRow}>
               <MaterialCommunityIcons name="account-tie-outline" size={24} color={theme.colors.primary} style={styles.icon} />
               <View style={styles.infoTextContainer}>
@@ -159,7 +172,7 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
             </View>
           )}
 
-          {church.patron && (
+          {church.denomination === 'Catholic' && church.patron && (
             <View style={styles.infoRow}>
               <MaterialCommunityIcons name="shield-cross-outline" size={24} color={theme.colors.primary} style={styles.icon} />
               <View style={styles.infoTextContainer}>
@@ -169,7 +182,7 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
             </View>
           )}
 
-          {church.feastDay && (
+          {church.denomination === 'Catholic' && church.feastDay && (
             <View style={styles.infoRow}>
               <MaterialCommunityIcons name="calendar-star" size={24} color={theme.colors.primary} style={styles.icon} />
               <View style={styles.infoTextContainer}>

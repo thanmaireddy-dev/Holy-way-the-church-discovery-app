@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { View, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppButton } from '../components/AppButton';
+import { LoadingState } from '../components/LoadingState';
 import { useAuth } from '../context/AuthContext';
 import { UserDataContext } from '../context/UserDataContext';
 import { theme } from '../utils/theme';
@@ -12,6 +13,12 @@ const LANGUAGES = ["All", "English", "Telugu", "Tamil", "Malayalam", "Hindi"];
 export const ProfileScreen = () => {
   const { currentUser, isGuest, logout } = useAuth();
   const { preferences, updatePreferences } = useContext(UserDataContext);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 400); // Smooth transition
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleLogout = async () => {
     try {
@@ -42,6 +49,14 @@ export const ProfileScreen = () => {
       })}
     </ScrollView>
   );
+
+  if (loading) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <LoadingState message="Loading profile..." />
+      </SafeAreaView>
+    );
+  }
 
   return (
     <SafeAreaView style={styles.safeArea}>

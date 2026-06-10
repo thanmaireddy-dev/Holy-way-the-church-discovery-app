@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { View, StyleSheet, FlatList, ActivityIndicator, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { AppText } from '../components/AppText';
 import { ChurchCard } from '../components/ChurchCard';
+import { LoadingState } from '../components/LoadingState';
+import { EmptyState } from '../components/EmptyState';
 import { getChurches } from '../services/churchService';
 import { theme } from '../utils/theme';
 import { UserDataContext } from '../context/UserDataContext';
@@ -76,11 +78,12 @@ export const LanguagesScreen = ({ navigation }) => {
   const renderEmptyComponent = () => {
     if (loading) return null;
     return (
-      <View style={styles.emptyContainer}>
-        <AppText color="textLight" align="center">
-          No churches found offering services in {selectedLanguage}.
-        </AppText>
-      </View>
+      <EmptyState 
+        icon="translate-off" 
+        message={`No churches found`} 
+        subtitle={`No churches currently offer services in ${selectedLanguage}.`} 
+        fullScreen={false} 
+      />
     );
   };
 
@@ -88,9 +91,7 @@ export const LanguagesScreen = ({ navigation }) => {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         {loading && churches.length === 0 ? (
-          <View style={styles.centerContainer}>
-            <ActivityIndicator size="large" color={theme.colors.primary} />
-          </View>
+          <LoadingState message="Loading languages..." />
         ) : (
           <FlatList
             data={filteredChurches}

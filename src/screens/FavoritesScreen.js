@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { View, StyleSheet, FlatList, ActivityIndicator, SafeAreaView } from 'react-native';
 import { AppText } from '../components/AppText';
 import { ChurchCard } from '../components/ChurchCard';
+import { LoadingState } from '../components/LoadingState';
+import { EmptyState } from '../components/EmptyState';
 import { getChurches } from '../services/churchService';
 import { theme } from '../utils/theme';
 import { UserDataContext } from '../context/UserDataContext';
@@ -43,12 +45,12 @@ export const FavoritesScreen = ({ navigation }) => {
   const renderEmptyComponent = () => {
     if (loading) return null;
     return (
-      <View style={styles.emptyContainer}>
-        <AppText color="textLight" align="center">
-          You haven't saved any churches yet. 
-          Tap the heart icon on any church to add it here.
-        </AppText>
-      </View>
+      <EmptyState 
+        icon="heart-outline" 
+        message="No favorite churches yet" 
+        subtitle="Save churches to quickly access them later." 
+        fullScreen={false} 
+      />
     );
   };
 
@@ -56,9 +58,7 @@ export const FavoritesScreen = ({ navigation }) => {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         {loading && churches.length === 0 ? (
-          <View style={styles.centerContainer}>
-            <ActivityIndicator size="large" color={theme.colors.primary} />
-          </View>
+          <LoadingState message="Loading favorites..." />
         ) : (
           <FlatList
             data={favoriteChurches}

@@ -1,8 +1,9 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet, View, Image } from 'react-native';
+import { TouchableOpacity, StyleSheet, View } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { theme } from '../utils/theme';
 import { AppText } from './AppText';
+import { SkeletonImage } from './SkeletonImage';
 import { getChurchImage } from '../utils/churchUtils';
 import { getChurchStatus } from '../utils/timeUtils';
 
@@ -26,7 +27,7 @@ export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onTo
       activeOpacity={0.9}
     >
       <View style={styles.imageContainer}>
-        <Image 
+        <SkeletonImage 
           source={getChurchImage(church.image)} 
           style={styles.image} 
           resizeMode="cover"

@@ -6,7 +6,7 @@ export const UserDataContext = createContext();
 export const UserDataProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
   const [recentlyViewed, setRecentlyViewed] = useState([]);
-  const [preferences, setPreferences] = useState({ denomination: null, language: null });
+  const [preferences, setPreferences] = useState({ denomination: null, language: null, distance: null, serviceTime: null });
 
   useEffect(() => {
     loadData();

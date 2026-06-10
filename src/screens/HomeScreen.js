@@ -3,6 +3,8 @@ import { View, StyleSheet, FlatList, ActivityIndicator, SafeAreaView, ScrollView
 import { AppText } from '../components/AppText';
 import { AppTextInput } from '../components/AppTextInput';
 import { ChurchCard } from '../components/ChurchCard';
+import { LoadingState } from '../components/LoadingState';
+import { EmptyState } from '../components/EmptyState';
 import { getChurches } from '../services/churchService';
 import { theme } from '../utils/theme';
 import { UserDataContext } from '../context/UserDataContext';
@@ -18,6 +20,7 @@ export const HomeScreen = ({ navigation }) => {
   const [selectedDenomination, setSelectedDenomination] = useState('All');
   const [selectedChurchType, setSelectedChurchType] = useState('All');
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   const { favorites, toggleFavorite, recentlyViewed, preferences } = useContext(UserDataContext);
   
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
@@ -28,25 +31,30 @@ export const HomeScreen = ({ navigation }) => {
 
   const recommendedChurches = React.useMemo(() => {
     if (!preferences?.denomination && !preferences?.language) return [];
-    let recs = churches.filter(c => 
-      (preferences.denomination && c.denomination === preferences.denomination) ||
-      (preferences.language && c.languages?.includes(preferences.language))
-    ).filter(c => !recentlyViewed?.includes(c.id));
+    let scoredRecs = churches.map(c => {
+      let score = 0;
+      if (preferences.denomination && c.denomination === preferences.denomination) score += 10;
+      if (preferences.language && c.languages?.includes(preferences.language)) score += 10;
+      return { ...c, recScore: score };
+    }).filter(c => c.recScore > 0 && !recentlyViewed?.includes(c.id));
     
     if (selectedDenomination !== 'All') {
-      recs = recs.filter(c => c.denomination === selectedDenomination);
+      scoredRecs = scoredRecs.filter(c => c.denomination === selectedDenomination);
     }
-    return recs.slice(0, 5);
+    
+    return scoredRecs.sort((a, b) => b.recScore - a.recScore).slice(0, 5);
   }, [churches, preferences, recentlyViewed, selectedDenomination]);
 
   const loadChurches = async () => {
     try {
       setLoading(true);
+      setError(false);
       const data = await getChurches();
       setChurches(data);
       setFilteredChurches(data);
-    } catch (error) {
-      console.error("Failed to load churches", error);
+    } catch (err) {
+      console.error("Failed to load churches", err);
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -170,19 +178,62 @@ export const HomeScreen = ({ navigation }) => {
 
   const renderEmptyComponent = () => {
     if (loading) return null;
+    
+    if (error) {
+      return (
+        <EmptyState 
+          icon="wifi-off" 
+          message="You're currently offline" 
+          subtitle="Please check your internet connection and try again." 
+          actionLabel="Retry" 
+          onAction={loadChurches}
+          fullScreen={false}
+        />
+      );
+    }
+
     return (
-      <View style={styles.emptyContainer}>
-        <AppText color="textLight" align="center">
-          No churches found matching your search.
-        </AppText>
-      </View>
+      <EmptyState 
+        icon="church" 
+        message="No exact matches found" 
+        subtitle="Try changing your denomination, language, or distance preferences." 
+        actionLabel="Clear Filters" 
+        onAction={() => {
+          setSearchQuery('');
+          setSelectedDenomination('All');
+          setSelectedChurchType('All');
+        }}
+        fullScreen={false}
+      />
     );
   };
 
   const renderHorizontalSection = (title, data) => {
-    if (!data || data.length === 0) return null;
     // Don't show horizontal sections if user is actively searching
     if (searchQuery.trim() !== '') return null;
+    // Don't show horizontal sections if any category filters are active
+    if (selectedDenomination !== 'All' || selectedChurchType !== 'All') return null;
+
+    if (!data || data.length === 0) {
+      if (title === 'Recently Viewed') {
+        return (
+          <View style={styles.sectionContainer}>
+            <AppText variant="headingMedium" color="primary" style={styles.sectionTitle}>
+              {title}
+            </AppText>
+            <View style={styles.horizontalEmptyBox}>
+              <EmptyState 
+                icon="church" 
+                message="No recently viewed churches" 
+                subtitle="Explore churches and they'll appear here." 
+                fullScreen={false} 
+              />
+            </View>
+          </View>
+        );
+      }
+      return null;
+    }
 
     return (
       <View style={styles.sectionContainer}>
@@ -213,9 +264,7 @@ export const HomeScreen = ({ navigation }) => {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         {loading && churches.length === 0 ? (
-          <View style={styles.centerContainer}>
-            <ActivityIndicator size="large" color={theme.colors.primary} />
-          </View>
+          <LoadingState message="Loading churches..." />
         ) : (
           <FlatList
             data={filteredChurches}
@@ -333,5 +382,13 @@ const styles = StyleSheet.create({
     width: 280,
     marginRight: theme.spacing.md,
     marginBottom: 0,
+  },
+  horizontalEmptyBox: {
+    padding: theme.spacing.md,
+    backgroundColor: theme.colors.surface,
+    borderRadius: theme.borderRadius.lg,
+    borderWidth: 1,
+    borderColor: 'rgba(210, 180, 140, 0.3)',
+    ...theme.shadows.soft,
   }
 });
