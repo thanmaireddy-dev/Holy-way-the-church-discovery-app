@@ -71,6 +71,7 @@ export const FavoritesScreen = ({ navigation }) => {
                 isFavorite={favorites?.includes(item.id)}
                 onToggleFavorite={() => toggleFavorite(item.id)}
                 onPress={() => navigation.navigate('ChurchDetails', { church: item })}
+                showNextService={true}
               />
             )}
             contentContainerStyle={styles.listContent}

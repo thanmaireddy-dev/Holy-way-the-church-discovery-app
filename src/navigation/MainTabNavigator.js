@@ -4,7 +4,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTheme } from '../theme/ThemeContext';
 
 import { HomeScreen } from '../screens/HomeScreen';
-import { LanguagesScreen } from '../screens/LanguagesScreen';
+import { FeastsEventsScreen } from '../screens/FeastsEventsScreen';
 import { FindMyChurchScreen } from '../screens/FindMyChurchScreen';
 import { FavoritesScreen } from '../screens/FavoritesScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
@@ -23,8 +23,8 @@ export const MainTabNavigator = () => {
 
           if (route.name === 'HomeTab') {
             iconName = focused ? 'home-variant' : 'home-variant-outline';
-          } else if (route.name === 'LanguagesTab') {
-            iconName = 'translate';
+          } else if (route.name === 'FeastsEventsTab') {
+            iconName = focused ? 'calendar-star' : 'calendar-star';
           } else if (route.name === 'FindMyChurchTab') {
             iconName = focused ? 'church' : 'church';
           } else if (route.name === 'FavoritesTab') {
@@ -59,9 +59,9 @@ export const MainTabNavigator = () => {
         options={{ title: 'Home' }} 
       />
       <Tab.Screen 
-        name="LanguagesTab" 
-        component={LanguagesScreen} 
-        options={{ title: 'Languages' }} 
+        name="FeastsEventsTab" 
+        component={FeastsEventsScreen} 
+        options={{ title: 'Feasts & Events' }} 
       />
       <Tab.Screen 
         name="FindMyChurchTab" 

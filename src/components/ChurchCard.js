@@ -6,6 +6,7 @@ import { AppText } from './AppText';
 import { SkeletonImage } from './SkeletonImage';
 import { getChurchImage } from '../utils/churchUtils';
 import { getChurchStatus } from '../utils/timeUtils';
+import { getNextAvailableSchedule } from '../utils/nextServiceCalculator';
 
 const getChurchTypeIcon = (type) => {
   switch(type) {
@@ -17,10 +18,14 @@ const getChurchTypeIcon = (type) => {
   }
 };
 
-export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onToggleFavorite }) => {
+export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onToggleFavorite, showNextService = false }) => {
   const { theme } = useTheme();
   const styles = useMemo(() => getStyles(theme), [theme]);
   const status = getChurchStatus(church.massTimings);
+  
+  const nextServiceText = useMemo(() => {
+    return showNextService ? getNextAvailableSchedule(church) : null;
+  }, [showNextService, church]);
 
   return (
     <TouchableOpacity 
@@ -78,6 +83,20 @@ export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onTo
         <AppText variant="body" color="textLight">
           {church.city}
         </AppText>
+
+        {showNextService && nextServiceText && (
+          <View style={styles.nextServiceRow}>
+            <MaterialCommunityIcons 
+              name="clock-outline" 
+              size={12} 
+              color={theme.isDark ? '#D4AF37' : '#8B5A2B'} 
+              style={styles.nextServiceIcon}
+            />
+            <AppText variant="bodyMedium" style={styles.nextServiceText}>
+              {nextServiceText}
+            </AppText>
+          </View>
+        )}
         
         {church.distance !== undefined && (
           <AppText variant="bodyMedium" color="primary" style={styles.distance}>
@@ -161,5 +180,17 @@ const getStyles = (theme) => StyleSheet.create({
   distance: {
     marginTop: theme.spacing.xs,
     fontWeight: 'bold',
+  },
+  nextServiceRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: theme.spacing.xs,
+  },
+  nextServiceIcon: {
+    marginRight: 4,
+  },
+  nextServiceText: {
+    fontSize: 12,
+    color: theme.isDark ? '#FFFFF0' : '#8B7D6B', // Soft ivory or darker beige
   }
 });

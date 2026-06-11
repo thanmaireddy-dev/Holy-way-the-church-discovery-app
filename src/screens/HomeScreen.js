@@ -255,6 +255,7 @@ export const HomeScreen = ({ navigation }) => {
               isFavorite={favorites?.includes(item.id)}
               onToggleFavorite={() => toggleFavorite(item.id)}
               onPress={() => navigation.navigate('ChurchDetails', { church: item })}
+              showNextService={true}
             />
           )}
         />
