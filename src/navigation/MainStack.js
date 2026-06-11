@@ -3,11 +3,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { MainTabNavigator } from './MainTabNavigator';
 import { ChurchDetailsScreen } from '../screens/ChurchDetailsScreen';
 import { SuggestCorrectionScreen } from '../screens/SuggestCorrectionScreen';
-import { theme } from '../utils/theme';
+import { SettingsScreen } from '../screens/SettingsScreen';
+import { useTheme } from '../theme/ThemeContext';
 
 const Stack = createNativeStackNavigator();
 
 export const MainStack = () => {
+  const { theme } = useTheme();
+
   return (
     <Stack.Navigator 
       screenOptions={{ 
@@ -35,6 +38,11 @@ export const MainStack = () => {
         name="SuggestCorrection" 
         component={SuggestCorrectionScreen} 
         options={{ title: 'Suggest Correction' }}
+      />
+      <Stack.Screen 
+        name="Settings" 
+        component={SettingsScreen} 
+        options={{ title: 'Settings' }}
       />
     </Stack.Navigator>
   );

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native';
 import { AppText } from './AppText';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 export const AppButton = ({ 
   title, 
@@ -12,6 +12,8 @@ export const AppButton = ({
   disabled = false,
   ...props
 }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const isPrimary = variant === 'primary';
   
   return (
@@ -42,7 +44,7 @@ export const AppButton = ({
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   button: {
     paddingVertical: theme.spacing.md,
     paddingHorizontal: theme.spacing.lg,

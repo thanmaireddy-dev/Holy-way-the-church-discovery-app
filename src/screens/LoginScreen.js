@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, StyleSheet, SafeAreaView, KeyboardAvoidingView, Platform } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppTextInput } from '../components/AppTextInput';
 import { AppButton } from '../components/AppButton';
 import { useAuth } from '../context/AuthContext';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 export const LoginScreen = ({ navigation }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const { login, loginAsGuest } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -93,7 +95,7 @@ export const LoginScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,

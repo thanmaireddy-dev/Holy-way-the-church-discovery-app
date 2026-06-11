@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import { View, StyleSheet, Animated } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AppText } from './AppText';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 export const LoadingState = ({ message = "Loading...", fullScreen = true }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const pulseAnim = useRef(new Animated.Value(0.6)).current;
 
   useEffect(() => {
@@ -36,7 +38,7 @@ export const LoadingState = ({ message = "Loading...", fullScreen = true }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',

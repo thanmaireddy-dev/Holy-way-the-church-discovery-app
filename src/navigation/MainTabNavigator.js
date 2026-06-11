@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 import { HomeScreen } from '../screens/HomeScreen';
 import { LanguagesScreen } from '../screens/LanguagesScreen';
@@ -12,6 +12,8 @@ import { ProfileScreen } from '../screens/ProfileScreen';
 const Tab = createBottomTabNavigator();
 
 export const MainTabNavigator = () => {
+  const { theme } = useTheme();
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({

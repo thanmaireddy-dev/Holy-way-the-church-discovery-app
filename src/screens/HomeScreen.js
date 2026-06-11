@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useMemo } from 'react';
 import { View, StyleSheet, FlatList, ActivityIndicator, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppTextInput } from '../components/AppTextInput';
@@ -6,7 +6,7 @@ import { ChurchCard } from '../components/ChurchCard';
 import { LoadingState } from '../components/LoadingState';
 import { EmptyState } from '../components/EmptyState';
 import { getChurches } from '../services/churchService';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { UserDataContext } from '../context/UserDataContext';
 import { useDebounce } from '../utils/useDebounce';
 
@@ -14,6 +14,8 @@ const DENOMINATIONS = ['All', 'Catholic', 'CSI', 'Pentecostal', 'Baptist', 'Meth
 const CHURCH_TYPES = ['All', 'Basilica', 'Cathedral', 'Shrine', 'Parish'];
 
 export const HomeScreen = ({ navigation }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const [churches, setChurches] = useState([]);
   const [filteredChurches, setFilteredChurches] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -31,7 +33,7 @@ export const HomeScreen = ({ navigation }) => {
 
   const recommendedChurches = React.useMemo(() => {
     if (!preferences?.denomination && !preferences?.language) return [];
-    let scoredRecs = churches.map(c => {
+    let scoredRecs = churches?.map(c => {
       let score = 0;
       if (preferences.denomination && c.denomination === preferences.denomination) score += 10;
       if (preferences.language && c.languages?.includes(preferences.language)) score += 10;
@@ -105,7 +107,7 @@ export const HomeScreen = ({ navigation }) => {
   };
 
   const recentChurches = React.useMemo(() => {
-    let recent = recentlyViewed?.map(id => churches.find(c => c.id === id)).filter(Boolean) || [];
+    let recent = recentlyViewed?.map(id => churches?.find(c => c.id === id)).filter(Boolean) || [];
     if (selectedDenomination !== 'All') {
       recent = recent.filter(c => c.denomination === selectedDenomination);
     }
@@ -302,7 +304,7 @@ export const HomeScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,
@@ -388,7 +390,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.surface,
     borderRadius: theme.borderRadius.lg,
     borderWidth: 1,
-    borderColor: 'rgba(210, 180, 140, 0.3)',
+    borderColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.3)',
     ...theme.shadows.soft,
   }
 });

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { TextInput, StyleSheet, View } from 'react-native';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { AppText } from './AppText';
 
 export const AppTextInput = ({ label, error, style, ...props }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
+
   return (
     <View style={[styles.container, style]}>
       {label && (
@@ -28,7 +31,7 @@ export const AppTextInput = ({ label, error, style, ...props }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   container: {
     marginBottom: theme.spacing.md,
   },

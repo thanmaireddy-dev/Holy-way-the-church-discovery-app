@@ -1,16 +1,18 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useMemo } from 'react';
 import { View, StyleSheet, FlatList, ActivityIndicator, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { AppText } from '../components/AppText';
 import { ChurchCard } from '../components/ChurchCard';
 import { LoadingState } from '../components/LoadingState';
 import { EmptyState } from '../components/EmptyState';
 import { getChurches } from '../services/churchService';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { UserDataContext } from '../context/UserDataContext';
 
 const LANGUAGES = ['English', 'Telugu', 'Tamil', 'Malayalam', 'Hindi'];
 
 export const LanguagesScreen = ({ navigation }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const [churches, setChurches] = useState([]);
   const [filteredChurches, setFilteredChurches] = useState([]);
   const [selectedLanguage, setSelectedLanguage] = useState('English');
@@ -35,8 +37,8 @@ export const LanguagesScreen = ({ navigation }) => {
   };
 
   const applyFilter = (language, allChurches = churches) => {
-    const filtered = allChurches.filter(c => 
-      c.languages && c.languages.some(l => l.toLowerCase() === language.toLowerCase())
+    const filtered = allChurches?.filter(c => 
+      c?.languages?.some(l => l.toLowerCase() === language.toLowerCase())
     );
     setFilteredChurches(filtered);
   };
@@ -120,7 +122,7 @@ export const LanguagesScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,

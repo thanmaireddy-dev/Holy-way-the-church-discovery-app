@@ -1,14 +1,16 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useMemo } from 'react';
 import { View, StyleSheet, FlatList, ActivityIndicator, SafeAreaView } from 'react-native';
 import { AppText } from '../components/AppText';
 import { ChurchCard } from '../components/ChurchCard';
 import { LoadingState } from '../components/LoadingState';
 import { EmptyState } from '../components/EmptyState';
 import { getChurches } from '../services/churchService';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { UserDataContext } from '../context/UserDataContext';
 
 export const FavoritesScreen = ({ navigation }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const [churches, setChurches] = useState([]);
   const [loading, setLoading] = useState(true);
   const { favorites, toggleFavorite } = useContext(UserDataContext);
@@ -29,7 +31,7 @@ export const FavoritesScreen = ({ navigation }) => {
     }
   };
 
-  const favoriteChurches = churches.filter(c => favorites?.includes(c.id));
+  const favoriteChurches = churches?.filter(c => favorites?.includes(c.id));
 
   const renderHeader = () => (
     <View style={styles.header}>
@@ -87,7 +89,7 @@ export const FavoritesScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,

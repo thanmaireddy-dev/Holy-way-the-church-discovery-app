@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, StyleSheet, SafeAreaView, KeyboardAvoidingView, Platform, ScrollView, Alert } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppTextInput } from '../components/AppTextInput';
 import { AppButton } from '../components/AppButton';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { submitCorrection } from '../services/churchService';
 
 export const SuggestCorrectionScreen = ({ route, navigation }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const { church } = route.params;
   const [suggestion, setSuggestion] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -70,7 +72,7 @@ export const SuggestCorrectionScreen = ({ route, navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,

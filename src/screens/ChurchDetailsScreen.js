@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { View, StyleSheet, SafeAreaView, ScrollView, Linking, Platform, Image, TouchableOpacity, Alert, Share } from 'react-native';
+import React, { useContext, useEffect, useState, useMemo } from 'react';
+import { View, StyleSheet, SafeAreaView, ScrollView, Linking, TouchableOpacity, Alert, Share } from 'react-native';
 import { AppText } from '../components/AppText';
 import { AppButton } from '../components/AppButton';
 import { SkeletonImage } from '../components/SkeletonImage';
 import { LoadingState } from '../components/LoadingState';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { getChurchImage, getTimingLabel } from '../utils/churchUtils';
 import { getChurchStatus, formatTimings } from '../utils/timeUtils';
@@ -15,7 +15,9 @@ import * as Clipboard from 'expo-clipboard';
 export const ChurchDetailsScreen = ({ route, navigation }) => {
   const { church } = route.params;
   const { favorites, toggleFavorite, addRecentlyViewed } = useContext(UserDataContext);
-  
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
+
   const [loading, setLoading] = useState(true);
   const isFavorite = favorites?.includes(church.id);
   const status = getChurchStatus(church.massTimings);
@@ -33,14 +35,14 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
       Linking.openURL(church.mapsUrl);
       return;
     }
-    
+
     let query;
     if (isValid(church.googleMapsQuery)) {
       query = church.googleMapsQuery;
     } else {
       query = `${church.name || ''} ${church.city || ''}`.trim();
     }
-    
+
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 
     Linking.canOpenURL(url).then(supported => {
@@ -100,14 +102,14 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
-        
+
         <View style={styles.imageContainer}>
           <SkeletonImage source={getChurchImage(church.image)} style={styles.image} resizeMode="cover" />
           <View style={[styles.statusBadge, { backgroundColor: status.color }]}>
             <AppText variant="bodyMedium" style={styles.statusText}>{status.label}</AppText>
           </View>
           <TouchableOpacity style={styles.favoriteButton} onPress={() => toggleFavorite(church.id)}>
-            <MaterialCommunityIcons name={isFavorite ? "heart" : "heart-outline"} size={28} color={isFavorite ? theme.colors.primary : "#ffffff"} />
+            <MaterialCommunityIcons name={isFavorite ? "heart" : "heart-outline"} size={28} color={isFavorite ? theme.colors.primary : theme.colors.white} />
           </TouchableOpacity>
         </View>
 
@@ -231,8 +233,8 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
           )}
 
           <View style={styles.actionButtonsRow}>
-            <AppButton 
-              title="Open in Maps" 
+            <AppButton
+              title="Open in Maps"
               onPress={openInMaps}
               style={[styles.mapButton, { flex: 1, marginRight: theme.spacing.md }]}
             />
@@ -257,8 +259,8 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
                     <AppText variant="bodyMedium" color="secondary" style={styles.eventDate}>{event.date}</AppText>
                   </View>
                   <AppText variant="body" color="text" style={styles.eventDescription}>{event.description}</AppText>
-                  <TouchableOpacity 
-                    style={styles.remindButton} 
+                  <TouchableOpacity
+                    style={styles.remindButton}
                     onPress={() => handleRemindMe(event.title, `Upcoming event at ${church.name}: ${event.title}`)}
                   >
                     <MaterialCommunityIcons name="bell-ring-outline" size={16} color={theme.colors.primary} />
@@ -270,8 +272,8 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
           )}
 
           <View style={styles.divider} />
-          
-          <TouchableOpacity 
+
+          <TouchableOpacity
             style={styles.suggestButton}
             onPress={() => navigation.navigate('SuggestCorrection', { church })}
           >
@@ -286,7 +288,7 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,
@@ -313,7 +315,7 @@ const styles = StyleSheet.create({
     ...theme.shadows.medium,
   },
   statusText: {
-    color: '#ffffff',
+    color: theme.colors.white,
     fontWeight: 'bold',
   },
   favoriteButton: {
@@ -342,7 +344,7 @@ const styles = StyleSheet.create({
   },
   denominationPill: {
     alignSelf: 'flex-start',
-    backgroundColor: 'rgba(210, 180, 140, 0.2)',
+    backgroundColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.2)',
     paddingHorizontal: theme.spacing.sm,
     paddingVertical: 2,
     borderRadius: 4,
@@ -406,12 +408,12 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: 24,
-    backgroundColor: 'rgba(210, 180, 140, 0.15)',
+    backgroundColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.15)',
     justifyContent: 'center',
     alignItems: 'center',
     marginLeft: theme.spacing.sm,
     borderWidth: 1,
-    borderColor: 'rgba(210, 180, 140, 0.3)',
+    borderColor: theme.isDark ? 'transparent' : 'rgba(210, 180, 140, 0.3)',
   },
   eventCard: {
     backgroundColor: theme.colors.background,
@@ -419,7 +421,7 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.md,
     marginBottom: theme.spacing.md,
     borderWidth: 1,
-    borderColor: 'rgba(210, 180, 140, 0.2)',
+    borderColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.2)',
   },
   eventHeader: {
     flexDirection: 'row',
@@ -443,7 +445,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     paddingVertical: theme.spacing.xs,
     paddingHorizontal: theme.spacing.sm,
-    backgroundColor: 'rgba(210, 180, 140, 0.15)',
+    backgroundColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.15)',
     borderRadius: 16,
   },
   remindText: {

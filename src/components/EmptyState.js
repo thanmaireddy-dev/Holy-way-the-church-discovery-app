@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AppText } from './AppText';
 import { AppButton } from './AppButton';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 export const EmptyState = ({ 
   icon = "church", 
@@ -13,6 +13,9 @@ export const EmptyState = ({
   onAction,
   fullScreen = true
 }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
+
   return (
     <View style={[styles.container, fullScreen && styles.fullScreen]}>
       <MaterialCommunityIcons name={icon} size={80} color={theme.colors.primary} style={styles.icon} />
@@ -36,7 +39,7 @@ export const EmptyState = ({
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',

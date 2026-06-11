@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { View, StyleSheet, Animated, Image } from 'react-native';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 export const SkeletonImage = ({ source, style, resizeMode = "cover" }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const [loaded, setLoaded] = useState(false);
   const pulseAnim = useRef(new Animated.Value(0.5)).current;
 
@@ -52,15 +54,15 @@ export const SkeletonImage = ({ source, style, resizeMode = "cover" }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   container: {
     overflow: 'hidden',
     position: 'relative',
-    backgroundColor: 'rgba(210, 180, 140, 0.2)', // soft beige placeholder background
+    backgroundColor: theme.isDark ? 'rgba(210, 180, 140, 0.1)' : 'rgba(210, 180, 140, 0.2)', // soft beige placeholder background
   },
   skeleton: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(210, 180, 140, 0.4)', // slightly darker beige for the pulse
+    backgroundColor: theme.isDark ? 'rgba(210, 180, 140, 0.2)' : 'rgba(210, 180, 140, 0.4)', // slightly darker beige for the pulse
   },
   image: {
     width: '100%',

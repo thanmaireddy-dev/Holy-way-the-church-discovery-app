@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Text, StyleSheet } from 'react-native';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 export const AppText = ({ 
   children, 
@@ -10,6 +10,9 @@ export const AppText = ({
   align = 'left',
   ...props 
 }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
+
   return (
     <Text 
       style={[
@@ -25,7 +28,7 @@ export const AppText = ({
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   base: {
     fontFamily: theme.typography.body,
   },

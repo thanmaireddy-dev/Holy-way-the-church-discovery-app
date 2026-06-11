@@ -13,7 +13,7 @@ export const getChurches = async () => {
       return {
         id: doc.id,
         ...data,
-        image: (data.imageUrls && data.imageUrls.length > 0) ? data.imageUrls[0] : (data.churchType?.toLowerCase() || 'parish'),
+        image: data?.imageUrls?.[0] || (data.churchType?.toLowerCase() || 'parish'),
         googleMapsQuery: data.mapsUrl || `${data.name} ${data.city} ${data.address}`
       };
     });

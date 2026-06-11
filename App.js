@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { View, ActivityIndicator, StyleSheet, LogBox } from 'react-native';
 
 // We are only using local notifications, so we can safely ignore the Expo Go push notification warning
@@ -8,12 +8,15 @@ import { PlayfairDisplay_400Regular, PlayfairDisplay_600SemiBold, PlayfairDispla
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import { AuthProvider, useAuth } from './src/context/AuthContext';
 import { RootNavigator } from './src/navigation/RootNavigator';
-import { theme } from './src/utils/theme';
-import { AppText } from './src/components/AppText';
+import { ThemeProvider, useTheme } from './src/theme/ThemeContext';
+import { ErrorBoundary } from './src/components/ErrorBoundary';
 
 // Inner component that waits for both fonts and Auth state
 const AppLoader = () => {
   const { loading: authLoading } = useAuth();
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
+
   const [fontsLoaded] = useFonts({
     PlayfairDisplay_400Regular,
     PlayfairDisplay_600SemiBold,
@@ -31,22 +34,28 @@ const AppLoader = () => {
     );
   }
 
-  return <RootNavigator />;
+  return (
+    <ErrorBoundary>
+      <RootNavigator />
+    </ErrorBoundary>
+  );
 };
 
 import { UserDataProvider } from './src/context/UserDataContext';
 
 export default function App() {
   return (
-    <AuthProvider>
-      <UserDataProvider>
-        <AppLoader />
-      </UserDataProvider>
-    </AuthProvider>
+    <ThemeProvider>
+      <AuthProvider>
+        <UserDataProvider>
+          <AppLoader />
+        </UserDataProvider>
+      </AuthProvider>
+    </ThemeProvider>
   );
 }
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   splashContainer: {
     flex: 1,
     backgroundColor: theme.colors.background,

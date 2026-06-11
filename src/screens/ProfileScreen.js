@@ -5,14 +5,16 @@ import { AppButton } from '../components/AppButton';
 import { LoadingState } from '../components/LoadingState';
 import { useAuth } from '../context/AuthContext';
 import { UserDataContext } from '../context/UserDataContext';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 
 const DENOMINATIONS = ["All", "Catholic", "Methodist", "Pentecostal", "Baptist", "Orthodox", "CSI"];
 const LANGUAGES = ["All", "English", "Telugu", "Tamil", "Malayalam", "Hindi"];
 
-export const ProfileScreen = () => {
+export const ProfileScreen = ({ navigation }) => {
   const { currentUser, isGuest, logout } = useAuth();
   const { preferences, updatePreferences } = useContext(UserDataContext);
+  const { theme } = useTheme();
+  const styles = React.useMemo(() => getStyles(theme), [theme]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -98,6 +100,13 @@ export const ProfileScreen = () => {
           </View>
 
           <AppButton 
+            title="Settings" 
+            onPress={() => navigation.navigate('Settings')}
+            style={styles.settingsButton}
+            variant="secondary"
+          />
+
+          <AppButton 
             title={isGuest ? 'Exit Guest Mode' : 'Log Out'} 
             onPress={handleLogout}
             style={styles.logoutButton}
@@ -110,7 +119,7 @@ export const ProfileScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,
@@ -171,6 +180,9 @@ const styles = StyleSheet.create({
     color: theme.colors.surface,
   },
   logoutButton: {
+    marginTop: theme.spacing.md,
+  },
+  settingsButton: {
     marginTop: theme.spacing.xl,
   }
 });

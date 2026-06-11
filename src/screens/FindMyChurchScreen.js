@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
+import React, { useState, useEffect, useContext, useRef, useMemo } from 'react';
 import { View, StyleSheet, SafeAreaView, TouchableOpacity, Animated, ScrollView, FlatList, ActivityIndicator, Dimensions } from 'react-native';
 import * as Location from 'expo-location';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -6,7 +6,7 @@ import { AppText } from '../components/AppText';
 import { AppButton } from '../components/AppButton';
 import { ChurchCard } from '../components/ChurchCard';
 import { getChurches } from '../services/churchService';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { calculateDistance, formatDistance } from '../utils/distanceUtils';
 import { UserDataContext } from '../context/UserDataContext';
 
@@ -23,6 +23,8 @@ const SERVICE_TIMES = ['Morning Service', 'Afternoon Service', 'Evening Service'
 const { width, height } = Dimensions.get('window');
 
 export const FindMyChurchScreen = ({ navigation }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const { favorites, toggleFavorite, updatePreferences } = useContext(UserDataContext);
   
   const [step, setStep] = useState(0);
@@ -105,7 +107,7 @@ export const FindMyChurchScreen = ({ navigation }) => {
         userLon = location.coords.longitude;
       }
 
-      const scoredChurches = data.map(church => {
+      const scoredChurches = data?.map(church => {
         let score = 0;
         let isExact = true;
         let numericDist = 99999;
@@ -124,7 +126,7 @@ export const FindMyChurchScreen = ({ navigation }) => {
         }
         
         if (preferences.language) {
-          if (church.languages && church.languages.includes(preferences.language)) {
+          if (church?.languages?.includes(preferences.language)) {
             score += 10;
           } else {
             isExact = false;
@@ -434,7 +436,7 @@ export const FindMyChurchScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: theme.colors.background,

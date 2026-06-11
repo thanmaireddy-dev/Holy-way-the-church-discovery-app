@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { TouchableOpacity, StyleSheet, View } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { theme } from '../utils/theme';
+import { useTheme } from '../theme/ThemeContext';
 import { AppText } from './AppText';
 import { SkeletonImage } from './SkeletonImage';
 import { getChurchImage } from '../utils/churchUtils';
@@ -18,6 +18,8 @@ const getChurchTypeIcon = (type) => {
 };
 
 export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onToggleFavorite }) => {
+  const { theme } = useTheme();
+  const styles = useMemo(() => getStyles(theme), [theme]);
   const status = getChurchStatus(church.massTimings);
 
   return (
@@ -42,7 +44,7 @@ export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onTo
           <MaterialCommunityIcons 
             name={isFavorite ? "heart" : "heart-outline"} 
             size={24} 
-            color={isFavorite ? theme.colors.primary : "#ffffff"} 
+            color={isFavorite ? theme.colors.primary : theme.colors.white} 
           />
         </TouchableOpacity>
       </View>
@@ -87,14 +89,14 @@ export const ChurchCard = React.memo(({ church, onPress, style, isFavorite, onTo
   );
 });
 
-const styles = StyleSheet.create({
+const getStyles = (theme) => StyleSheet.create({
   card: {
     backgroundColor: theme.colors.surface,
     borderRadius: theme.borderRadius.lg,
     marginBottom: theme.spacing.md,
     ...theme.shadows.soft,
     borderWidth: 1,
-    borderColor: 'rgba(210, 180, 140, 0.3)',
+    borderColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.3)',
     overflow: 'hidden', // to round image corners
   },
   imageContainer: {
@@ -115,7 +117,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   statusText: {
-    color: '#ffffff',
+    color: theme.colors.white,
     fontSize: 12,
     fontWeight: 'bold',
   },
@@ -140,7 +142,7 @@ const styles = StyleSheet.create({
   },
   denominationPill: {
     alignSelf: 'flex-start',
-    backgroundColor: 'rgba(210, 180, 140, 0.2)',
+    backgroundColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.2)',
     paddingHorizontal: theme.spacing.sm,
     paddingVertical: 2,
     borderRadius: 4,
