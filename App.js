@@ -1,5 +1,9 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { View, ActivityIndicator, StyleSheet, LogBox } from 'react-native';
+import React, { useState } from 'react';
+import { View, StyleSheet, LogBox } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
+
+// Prevent native splash screen from hiding automatically
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 // We are only using local notifications, so we can safely ignore the Expo Go push notification warning
 LogBox.ignoreLogs(['expo-notifications: Android Push notifications']);
@@ -10,12 +14,13 @@ import { AuthProvider, useAuth } from './src/context/AuthContext';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { ThemeProvider, useTheme } from './src/theme/ThemeContext';
 import { ErrorBoundary } from './src/components/ErrorBoundary';
+import { UserDataProvider } from './src/context/UserDataContext';
+import { AnimatedSplashScreen } from './src/components/AnimatedSplashScreen';
 
 // Inner component that waits for both fonts and Auth state
 const AppLoader = () => {
   const { loading: authLoading } = useAuth();
   const { theme } = useTheme();
-  const styles = useMemo(() => getStyles(theme), [theme]);
 
   const [fontsLoaded] = useFonts({
     PlayfairDisplay_400Regular,
@@ -25,23 +30,29 @@ const AppLoader = () => {
     Inter_500Medium,
   });
 
-  if (authLoading || !fontsLoaded) {
-    return (
-      <View style={styles.splashContainer}>
-        {/* We use default Text here because AppText relies on fonts being loaded */}
-        <ActivityIndicator size="large" color={theme.colors.primary} />
-      </View>
-    );
-  }
+  const [isSplashAnimationComplete, setAnimationComplete] = useState(false);
+
+  // The app is "ready" when fonts and auth are completely loaded.
+  // ThemeContext handles its own readiness before rendering AppLoader.
+  const isAppReady = fontsLoaded && !authLoading;
 
   return (
-    <ErrorBoundary>
-      <RootNavigator />
-    </ErrorBoundary>
+    <View style={styles.container}>
+      {isAppReady && (
+        <ErrorBoundary>
+          <RootNavigator />
+        </ErrorBoundary>
+      )}
+
+      {!isSplashAnimationComplete && (
+        <AnimatedSplashScreen 
+          isAppReady={isAppReady} 
+          onAnimationComplete={() => setAnimationComplete(true)} 
+        />
+      )}
+    </View>
   );
 };
-
-import { UserDataProvider } from './src/context/UserDataContext';
 
 export default function App() {
   return (
@@ -55,11 +66,8 @@ export default function App() {
   );
 }
 
-const getStyles = (theme) => StyleSheet.create({
-  splashContainer: {
+const styles = StyleSheet.create({
+  container: {
     flex: 1,
-    backgroundColor: theme.colors.background,
-    justifyContent: 'center',
-    alignItems: 'center',
   }
 });
