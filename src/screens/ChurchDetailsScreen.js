@@ -166,31 +166,37 @@ export const ChurchDetailsScreen = ({ route, navigation }) => {
 
           <View style={styles.divider} />
 
-          <View style={styles.infoRow}>
-            <MaterialCommunityIcons name="map-marker-outline" size={24} color={theme.colors.primary} style={styles.icon} />
-            <View style={styles.infoTextContainer}>
-              <AppText variant="bodyMedium" color="text">Address</AppText>
-              <AppText variant="body" color="textLight">{church.address}</AppText>
+          {church.address ? (
+            <View style={styles.infoRow}>
+              <MaterialCommunityIcons name="map-marker-outline" size={24} color={theme.colors.primary} style={styles.icon} />
+              <View style={styles.infoTextContainer}>
+                <AppText variant="bodyMedium" color="text">Address</AppText>
+                <AppText variant="body" color="textLight">{church.address}</AppText>
+              </View>
             </View>
-          </View>
+          ) : null}
 
-          <View style={styles.infoRow}>
-            <MaterialCommunityIcons name="phone-outline" size={24} color={theme.colors.primary} style={styles.icon} />
-            <View style={styles.infoTextContainer}>
-              <AppText variant="bodyMedium" color="text">Contact</AppText>
-              <AppText variant="body" color="textLight">{church.phone || 'Not available'}</AppText>
+          {church.phone ? (
+            <View style={styles.infoRow}>
+              <MaterialCommunityIcons name="phone-outline" size={24} color={theme.colors.primary} style={styles.icon} />
+              <View style={styles.infoTextContainer}>
+                <AppText variant="bodyMedium" color="text">Contact</AppText>
+                <AppText variant="body" color="textLight">{church.phone}</AppText>
+              </View>
             </View>
-          </View>
+          ) : null}
 
-          <View style={styles.infoRow}>
-            <MaterialCommunityIcons name="translate" size={24} color={theme.colors.primary} style={styles.icon} />
-            <View style={styles.infoTextContainer}>
-              <AppText variant="bodyMedium" color="text">Languages</AppText>
-              <AppText variant="body" color="textLight">
-                {church.languages && church.languages.length > 0 ? church.languages.join(', ') : 'Not specified'}
-              </AppText>
+          {church.languages && church.languages.length > 0 ? (
+            <View style={styles.infoRow}>
+              <MaterialCommunityIcons name="translate" size={24} color={theme.colors.primary} style={styles.icon} />
+              <View style={styles.infoTextContainer}>
+                <AppText variant="bodyMedium" color="text">Languages</AppText>
+                <AppText variant="body" color="textLight">
+                  {church.languages.join(', ')}
+                </AppText>
+              </View>
             </View>
-          </View>
+          ) : null}
 
           {church.denomination === 'Catholic' && church.parishPriest && (
             <View style={styles.infoRow}>

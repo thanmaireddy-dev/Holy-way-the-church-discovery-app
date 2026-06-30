@@ -76,9 +76,9 @@ export const HomeScreen = ({ navigation }) => {
     if (query.trim()) {
       const lowerQuery = query.toLowerCase();
       filtered = filtered.filter(c => 
-        c.name.toLowerCase().includes(lowerQuery) ||
-        c.city.toLowerCase().includes(lowerQuery) ||
-        c.address.toLowerCase().includes(lowerQuery)
+        (c.name || '').toLowerCase().includes(lowerQuery) ||
+        (c.city || '').toLowerCase().includes(lowerQuery) ||
+        (c.address || '').toLowerCase().includes(lowerQuery)
       );
     }
     

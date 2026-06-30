@@ -1,0 +1,129 @@
+{
+  "oldChurch": {
+    "searchKeywords": [
+      "mary",
+      "basilica",
+      "st. mary's basilica",
+      "secunderabad",
+      "sarojini",
+      "naidu",
+      "shivaji",
+      "nagar"
+    ],
+    "longitude": 78.5006,
+    "status": "active",
+    "imageUrls": [
+      "https://www.archdioceseofhyderabad.org/images/parish-images/altar-st-marys-basilica-secunderabad.jpg"
+    ],
+    "parishPriest": "Fr. Marneni Argogyam (2022 - till date)",
+    "patron": "Our Lady of the Assumption",
+    "churchType": "Basilica",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=St.%20Mary's%20Basilica%20Secunderabad",
+    "phone": "+91 40 2780 4355",
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1780057691,
+      "nanoseconds": 667000000
+    },
+    "updatedAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1780057691,
+      "nanoseconds": 667000000
+    },
+    "feastDay": "15th August",
+    "name": "St. Mary's Basilica",
+    "languages": [
+      "English",
+      "Telugu",
+      "Tamil"
+    ],
+    "address": "St. Mary’s Basilica\nH.No. 43, Sarojini Devi Road Secunderabad - 500 025, T.S.",
+    "description": "Basilica of Our Lady of the Assumption is a minor basilica located in Secunderabad. The decree designating it as a basilica was issued on 7 November 2008. The church is located on Sarojini Naidu Road in Secunderabad. It owes its early history to Father Daniel Murphy along with Bishop Carew.",
+    "city": "Secunderabad",
+    "latitude": 17.4399,
+    "denomination": "Catholic",
+    "website": "stmarysbasilica.in",
+    "massTimings": {
+      "sunday": [
+        {
+          "languages": [
+            "Tamil"
+          ],
+          "time": "06:00 AM"
+        },
+        {
+          "languages": [
+            "English"
+          ],
+          "time": "07:00 AM"
+        },
+        {
+          "languages": [
+            "Telugu"
+          ],
+          "time": "08:15 AM"
+        },
+        {
+          "languages": [
+            "English"
+          ],
+          "time": "09:30 AM"
+        },
+        {
+          "note": "(Children’s Mass)",
+          "languages": [
+            "English"
+          ],
+          "time": "09:15 AM"
+        },
+        {
+          "languages": [
+            "English"
+          ],
+          "time": "11:30 AM"
+        },
+        {
+          "languages": [
+            "English"
+          ],
+          "time": "05:00 PM"
+        },
+        {
+          "languages": [
+            "English"
+          ],
+          "time": "06:00 PM"
+        }
+      ],
+      "weekday": [
+        {
+          "note": "(Every Friday)",
+          "time": "12:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ],
+      "saturday": [
+        {
+          "note": "Saturday)",
+          "time": "12:00 PM",
+          "languages": [
+            "English"
+          ]
+        }
+      ]
+    }
+  },
+  "newChurch": {
+    "address": "St. Joseph's Church Alirajpet P.O., Jagdevpur Mandal Gajwel Thaluk, Siddipet Dt. - 502 281, Telangana.",
+    "city": "Alirajpet",
+    "parishPriest": "Fr. Thathireddy Anil (2024 - till date)",
+    "patron": "St. Joseph",
+    "archdiocese": "Hyderabad",
+    "denomination": "Catholic",
+    "churchType": "Parish",
+    "name": "St. Joseph's Church",
+    "feastDay": "March 19th & June 29th (in honour of St. Paul - Vanabhojanam)"
+  }
+}

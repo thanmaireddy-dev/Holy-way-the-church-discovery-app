@@ -1,0 +1,92 @@
+{
+  "oldChurch": {
+    "parishPriest": "To be updated",
+    "description": "MCI-Centenary Methodist Church is a church compound located at Chapel road, Abids housing two of the most prominent churches in the city. It is a Protestant Church and is under the auspices of Methodist Church in India. It was built in the 1950s in order to accommodate the increasing number of Methodists in the city",
+    "patron": "To be updated",
+    "phone": " 040 2320 2285",
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1781343514,
+      "nanoseconds": 263000000
+    },
+    "status": "active",
+    "feastDay": "To be updated",
+    "searchKeywords": [],
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "imageUrls": [],
+    "churchType": "Parish",
+    "denomination": "Methodist",
+    "name": "Centenary Methodist English Church",
+    "mapsUrl": "To be updated",
+    "updatedAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1781343514,
+      "nanoseconds": 263000000
+    },
+    "googleMapsQuery": "Centenary Methodist English Church Secunderabad",
+    "website": "https://www.cmechyd.org/",
+    "longitude": null,
+    "latitude": null,
+    "city": "Secunderabad",
+    "archdiocese": "To be updated",
+    "massTimings": {
+      "sunday": [
+        {
+          "languages": [
+            "English"
+          ],
+          "time": "7:30 AM, 6:30 PM"
+        },
+        {
+          "time": "-",
+          "languages": [
+            "Telugu"
+          ]
+        }
+      ],
+      "weekday": [],
+      "saturday": []
+    },
+    "address": "5-8-328/3-10 & 4/A, Chapel Rd, Mahesh Nagar Colony, Abids, Hyderabad, Telangana 500001"
+  },
+  "newChurch": {
+    "googleMapsQuery": "",
+    "website": "",
+    "mapsUrl": "",
+    "name": "St. Joseph's Church",
+    "updatedAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1781343514,
+      "nanoseconds": 263000000
+    },
+    "address": "St. Joseph's Church Alirajpet P.O., Jagdevpur Mandal Gajwel Thaluk, Siddipet Dt. - 502 281, Telangana.",
+    "latitude": null,
+    "longitude": null,
+    "city": "Alirajpet",
+    "massTimings": {
+      "sunday": [],
+      "saturday": [],
+      "weekday": []
+    },
+    "archdiocese": "Hyderabad",
+    "patron": "St. Joseph",
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1781343514,
+      "nanoseconds": 263000000
+    },
+    "phone": "",
+    "status": "active",
+    "parishPriest": "Fr. Thathireddy Anil (2024 - till date)",
+    "description": "",
+    "imageUrls": [],
+    "churchType": "Parish",
+    "denomination": "Catholic",
+    "feastDay": "March 19th & June 29th (in honour of St. Paul - Vanabhojanam)",
+    "searchKeywords": [],
+    "languages": []
+  }
+}
