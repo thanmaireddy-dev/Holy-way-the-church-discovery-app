@@ -6,6 +6,8 @@ import { LoadingState } from '../components/LoadingState';
 import { useAuth } from '../context/AuthContext';
 import { UserDataContext } from '../context/UserDataContext';
 import { useTheme } from '../theme/ThemeContext';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import appConfig from '../../app.json';
 
 const DENOMINATIONS = ["All", "Catholic", "Methodist", "Pentecostal", "Baptist", "Orthodox", "CSI"];
 const LANGUAGES = ["All", "English", "Telugu", "Tamil", "Malayalam", "Hindi"];
@@ -16,6 +18,8 @@ export const ProfileScreen = ({ navigation }) => {
   const { theme } = useTheme();
   const styles = React.useMemo(() => getStyles(theme), [theme]);
   const [loading, setLoading] = useState(true);
+
+  const appVersion = appConfig?.expo?.version || '1.0.0';
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 400); // Smooth transition
@@ -65,6 +69,13 @@ export const ProfileScreen = ({ navigation }) => {
       <ScrollView contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false}>
         
         <View style={styles.card}>
+          <TouchableOpacity 
+            style={styles.infoButton} 
+            onPress={() => navigation.navigate('About')}
+          >
+            <MaterialCommunityIcons name="information-outline" size={24} color={theme.colors.primary} />
+          </TouchableOpacity>
+
           <AppText variant="headingMedium" color="primary" style={styles.title}>
             User Profile
           </AppText>
@@ -99,6 +110,33 @@ export const ProfileScreen = ({ navigation }) => {
             {renderPills(LANGUAGES, preferences.language, (val) => updatePreferences({ language: val }))}
           </View>
 
+          <View style={styles.divider} />
+
+          <View style={styles.infoSection}>
+            <AppText variant="headingMedium" color="primary" style={styles.sectionTitle}>
+              HolyWay Today
+            </AppText>
+            
+            <View style={styles.statsGrid}>
+              <View style={styles.statCard}>
+                <AppText variant="headingMedium" color="primary" style={styles.statNumber}>158</AppText>
+                <AppText variant="bodySmall" color="textLight" style={styles.statLabel}>Churches</AppText>
+              </View>
+              <View style={styles.statCard}>
+                <AppText variant="headingMedium" color="primary" style={styles.statNumber}>7</AppText>
+                <AppText variant="bodySmall" color="textLight" style={styles.statLabel}>Denominations</AppText>
+              </View>
+              <View style={styles.statCard}>
+                <AppText variant="headingMedium" color="primary" style={styles.statNumber}>6</AppText>
+                <AppText variant="bodySmall" color="textLight" style={styles.statLabel}>Languages</AppText>
+              </View>
+              <View style={styles.statCard}>
+                <AppText variant="headingMedium" color="primary" style={styles.statNumber}>100+</AppText>
+                <AppText variant="bodySmall" color="textLight" style={styles.statLabel}>Feast Days</AppText>
+              </View>
+            </View>
+          </View>
+
           <AppButton 
             title="Settings" 
             onPress={() => navigation.navigate('Settings')}
@@ -112,6 +150,12 @@ export const ProfileScreen = ({ navigation }) => {
             style={styles.logoutButton}
             variant="secondary"
           />
+        </View>
+
+        <View style={styles.footer}>
+          <AppText style={styles.footerVersion}>
+            HolyWay{'\n'}Version {appVersion}
+          </AppText>
         </View>
 
       </ScrollView>
@@ -184,5 +228,50 @@ const getStyles = (theme) => StyleSheet.create({
   },
   settingsButton: {
     marginTop: theme.spacing.xl,
+  },
+  infoButton: {
+    position: 'absolute',
+    top: theme.spacing.lg,
+    right: theme.spacing.lg,
+    zIndex: 1,
+    padding: theme.spacing.xs,
+  },
+  statsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    marginTop: theme.spacing.sm,
+  },
+  statCard: {
+    width: '48%',
+    backgroundColor: theme.isDark ? theme.colors.background : '#FDFBF7',
+    borderRadius: theme.borderRadius.md,
+    padding: theme.spacing.md,
+    marginBottom: theme.spacing.md,
+    borderWidth: 1,
+    borderColor: theme.isDark ? theme.colors.border : 'rgba(210, 180, 140, 0.4)',
+    alignItems: 'center',
+    ...theme.shadows.soft,
+  },
+  statNumber: {
+    marginBottom: 4,
+  },
+  statLabel: {
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+    fontSize: 10,
+  },
+  footer: {
+    alignItems: 'center',
+    marginTop: theme.spacing.md,
+    marginBottom: theme.spacing.xl,
+  },
+  footerVersion: {
+    textAlign: 'center',
+    fontSize: 10,
+    color: theme.colors.primary,
+    opacity: 0.65,
+    lineHeight: 16,
+    letterSpacing: 0.5,
   }
 });

@@ -4,6 +4,7 @@ import { MainTabNavigator } from './MainTabNavigator';
 import { ChurchDetailsScreen } from '../screens/ChurchDetailsScreen';
 import { SuggestCorrectionScreen } from '../screens/SuggestCorrectionScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
+import { AboutScreen } from '../screens/AboutScreen';
 import { useTheme } from '../theme/ThemeContext';
 
 const Stack = createNativeStackNavigator();
@@ -27,7 +28,7 @@ export const MainStack = () => {
       <Stack.Screen 
         name="MainTabs" 
         component={MainTabNavigator} 
-        options={{ headerShown: false }} // The tabs will not have a global header, each tab can manage its own title or just show it in the UI
+        options={{ headerShown: false }}
       />
       <Stack.Screen 
         name="ChurchDetails" 
@@ -43,6 +44,11 @@ export const MainStack = () => {
         name="Settings" 
         component={SettingsScreen} 
         options={{ title: 'Settings' }}
+      />
+      <Stack.Screen 
+        name="About" 
+        component={AboutScreen} 
+        options={{ title: 'About HolyWay' }}
       />
     </Stack.Navigator>
   );
