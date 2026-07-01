@@ -4,7 +4,7 @@
     "slug": "HolyWay",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon_square.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true
@@ -15,10 +15,16 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.mary_thanmaie.HolyWay"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ad5ae7eb-18a2-48e5-b06f-11387608d34a"
+      }
     }
   }
 }
