@@ -19,12 +19,13 @@ A testable Android APK is available through the GitHub Release.
 
 ### Download
 
-Download HolyWay v1.0.0
+Download HolyWay v1.0.0 from here! 
+https://github.com/thanmaireddy-dev/Holy-way-the-church-discovery-app/releases/tag/v1.0.0
 
 The APK is currently distributed as an Android release while the application continues to evolve.
 
 ###  How to Install:
-### Android
+### (Android)
 1. Open the HolyWay v1.0.0 GitHub Release.
 2. Download the .apk file from the Assets section.
 3. Open the downloaded APK on an Android device.
