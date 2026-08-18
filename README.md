@@ -37,11 +37,8 @@ The application requires an internet connection for retrieving the latest church
 
 ### Application Demo🎥
 
-A short walkthrough video demonstrating HolyWay's interface and core functionality is included below.
-
-
-
-HolyWay App Walkthrough
+A short walkthrough video demonstrating HolyWay's interface and core functionality is included below: 
+https://drive.google.com/file/d/1Ck0vVYWZfhXKwA7oWMDi-2aHRzasl_p6/view?usp=sharing
 
 ### The video demonstrates:
 
